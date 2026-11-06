@@ -1,0 +1,6 @@
+interface:
+  display_name: "Reverse Lab"
+  short_description: "Investigate apps and rebuild features with REA"
+  default_prompt: "Use $reverse-lab to investigate this application and explain its behavior with evidence."
+policy:
+  allow_implicit_invocation: true

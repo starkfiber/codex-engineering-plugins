@@ -1,0 +1,142 @@
+{
+  "name": "reverse-lab",
+  "version": "3.3.2",
+  "files": [
+    {
+      "path": ".codex-plugin/plugin.json",
+      "sha256": "c062adbba10f22b6e6dbc07dca57fce965b6f6b7edf43dee727eefdd10cb87e9"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "9f66c1712a255cf879a2b9e54dd197dc6678810a37f53cea217a18ae0e6b3ff2"
+    },
+    {
+      "path": "README.md",
+      "sha256": "9c30cfac255a06b5e0289bce6e345dfc557da468282f4cb27da0012c8af13140"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "e7b77bd8f3d16943116d5c024a4d6ee12a7e054712a155a2c0a81172451301b6"
+    },
+    {
+      "path": "bridge.mjs",
+      "sha256": "83a56251017380dd499f937ee0cf6a4639df2971b74fb442ebc560bbf4e20cb2"
+    },
+    {
+      "path": "docs/REA.md",
+      "sha256": "a59759ad87bbad78d15b3ff5206ea84ca89f1ca1e5368d5841dc9df3a7ff2c62"
+    },
+    {
+      "path": "fixtures/rea-analysis.json",
+      "sha256": "fb4549aae36f5f894fa07994502b4413d43417ed9ea26f6cccc55624f4750703"
+    },
+    {
+      "path": "fixtures/rea-renderer-partial.json",
+      "sha256": "b6ee930031fc7179c7434320a260d9fc6f04a70ffdc00568fff8bbdd0493097d"
+    },
+    {
+      "path": "skills/multiboot-lab/SKILL.md",
+      "sha256": "3fb9fd06598bccc7424b5b3e7ccb685f480ddfe35ca3d3c5545656cb18705cbc"
+    },
+    {
+      "path": "skills/multiboot-lab/references/foundation.md",
+      "sha256": "050cdf8a448a64970ee4f9490d5c3c21fe1261a54865bd5cb26f7f176bdcb76a"
+    },
+    {
+      "path": "skills/multiboot-lab/references/headless-vss.md",
+      "sha256": "a5581cac1d55d88b5d3932c521e55a3e0f775290065d43a56035c7e88e106d66"
+    },
+    {
+      "path": "skills/multiboot-lab/references/usb-acceptance.md",
+      "sha256": "a43fb17c6410759806115a39c2c5f748cf08d7847caadb718e0b6020e40e595b"
+    },
+    {
+      "path": "skills/multiboot-lab/references/vm-proof.md",
+      "sha256": "63760f35f6921ad4412a5238db5a5e34988720c12c5563c3533811759871f811"
+    },
+    {
+      "path": "skills/multiboot-lab/scripts/master-usb.mjs",
+      "sha256": "3a39fc9327f4520d94ded8929c3b21f14a32a0828a1b131a56dcefe3c59573e9"
+    },
+    {
+      "path": "skills/multiboot-lab/scripts/pack.mjs",
+      "sha256": "fbf4e53ffafc142ad40315b8af0834231ec830ab94affac51030688248387205"
+    },
+    {
+      "path": "skills/reverse-lab/SKILL.md",
+      "sha256": "4cdf77c63f664ad4ef7f4c0c93c2fb93ab8b33e190dadc7b5c64b834c7ff8b52"
+    },
+    {
+      "path": "skills/reverse-lab/agents/openai.yaml",
+      "sha256": "cf79caad49e1c6e6ad58f9cb6906cf23f830b2afee17180ff9ff5c6193b731a1"
+    },
+    {
+      "path": "skills/reverse-lab/references/case-files.md",
+      "sha256": "f7c9bb6292a36afa6eb19c51a1d8716d6ad02a4a406aa0a034159a4e1c5ce9c5"
+    },
+    {
+      "path": "skills/reverse-lab/references/continuity.md",
+      "sha256": "2e8a01233b596aed75f46aeab85d5fc433194030334005ab24174fa4282b234c"
+    },
+    {
+      "path": "skills/reverse-lab/references/council.md",
+      "sha256": "620c1fb2c1509bc26cbe71c38b0015a16707e13440a1641df97afee29481482a"
+    },
+    {
+      "path": "skills/reverse-lab/references/evidence-v3.md",
+      "sha256": "995ae02d2427cc26ee3b6c8c1a1bec3cc747cd6a1bf7c517861b8452aaa46d16"
+    },
+    {
+      "path": "skills/reverse-lab/references/jobs-replay.md",
+      "sha256": "c22c3afb26ab64f907a0c373b666a691156b199f4078aa56fbdc47b8244bfa2a"
+    },
+    {
+      "path": "skills/reverse-lab/references/lessons.md",
+      "sha256": "48130b8371864a8ead1527a9b313a2d5cc8833a005f8d6ea48821630f69382d7"
+    },
+    {
+      "path": "skills/reverse-lab/references/live-validation.md",
+      "sha256": "009a76715a2d69823079c7a7583943ef3a1db9fffd2e0adf45574c464d463d5d"
+    },
+    {
+      "path": "skills/reverse-lab/references/local-setup.md",
+      "sha256": "6517fdad820dbefcdbb97db979cfbce2ac330362526d624869be487f6ff11715"
+    },
+    {
+      "path": "skills/reverse-lab/scripts/case.mjs",
+      "sha256": "a4ed8802beb46e8eb32d7f2a8326f05fcb4f1606562b3db265695b8baa1ea4e2"
+    },
+    {
+      "path": "skills/reverse-lab/scripts/compare.mjs",
+      "sha256": "6227180a4e03fd474d64c735cd466cd6b520ea2ef6c80ef57a7d8e56b19acf8d"
+    },
+    {
+      "path": "skills/reverse-lab/scripts/coverage.mjs",
+      "sha256": "d9576cf168a60543c5ac6905ed3acfc3505474f926b57f05d8342707d10333f2"
+    },
+    {
+      "path": "skills/reverse-lab/scripts/jobs.mjs",
+      "sha256": "6669c341c89d4ba78c4a19a9928e0259f23142eac22818bfaa8b23f969be58ac"
+    },
+    {
+      "path": "skills/reverse-lab/scripts/replay.mjs",
+      "sha256": "ddf49ea4a4316c84e46996aec489600672ef5e15d6c3ad1cabd0eaafd9da79b7"
+    },
+    {
+      "path": "test-case-helper.mjs",
+      "sha256": "0798040d68941991cad3c4006b77722c9060374e55d9a6639757bc411987930e"
+    },
+    {
+      "path": "test-case-regressions.mjs",
+      "sha256": "b5e9bc67a4aa29b25aedc4e26f7741b2d0554b5ac121a3fc6f8813b79e40d19e"
+    },
+    {
+      "path": "test-evidence-v3.mjs",
+      "sha256": "1b724c5a99d9948caf8aaf03c8efbeb7a2a314232557c2b435e86f7752ec62b6"
+    },
+    {
+      "path": "test-jobs-replay.mjs",
+      "sha256": "c91e5f837b4fb5119fe285c695e630c8c586f4bbe331dc5cd7e79aa78364c76a"
+    }
+  ]
+}

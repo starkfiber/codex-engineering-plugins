@@ -1,0 +1,15 @@
+.DS_Store
+node_modules/
+.gradle/
+**/build/
+local.properties
+*.apk
+*.aab
+*.idsig
+*.jks
+*.keystore
+.env
+.env.*
+
+**/.build/
+**/.swiftpm/

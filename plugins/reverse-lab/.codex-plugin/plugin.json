@@ -1,0 +1,19 @@
+{
+  "name": "reverse-lab",
+  "version": "3.3.2",
+  "description": "Evidence-backed reverse engineering with engineering councils, durable cases and reconstruction verification.",
+  "skills": "./skills",
+  "interface": {
+    "displayName": "Reverse Lab",
+    "shortDescription": "Evidence, engineering councils and resumable investigations",
+    "category": "Developer Tools",
+    "defaultPrompt": [
+      "Use Reverse Lab to investigate this app and explain how its feature works with evidence."
+    ]
+  },
+  "author": {
+    "name": "ilanvkn",
+    "url": "https://github.com/ilanvkn"
+  },
+  "repository": "https://github.com/ilanvkn/codex-engineering-plugins"
+}

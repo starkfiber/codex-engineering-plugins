@@ -1,0 +1,20 @@
+name: Bug report
+description: Report a reproducible plugin, retrieval or MCP problem
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Plugin and client versions
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction and observed result
+      description: Include exact non-sensitive arguments, expected behavior and output. No keys, personal data or proprietary artifacts.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and remaining uncertainty

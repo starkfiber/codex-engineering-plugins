@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "apple-blueprint": {
+      "command": "/bin/sh",
+      "args": ["${PLUGIN_ROOT}/scripts/launch-mcp.sh"]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "apple",
+  "version": "2.0.0-alpha.3",
+  "requires_local_executor": true,
+  "description": "Apple platform engineering blueprint: Swift, native design, platform adapters, verification and firmware research.",
+  "skills": "./skills",
+  "mcpServers": "./.codex-plugin/mcp.json",
+  "interface": {
+    "displayName": "Apple Blueprint",
+    "shortDescription": "Design, build and verify across Apple platforms",
+    "category": "Developer Tools",
+    "defaultPrompt": [
+      "Use Apple Blueprint to build and verify this Apple platform feature."
+    ]
+  },
+  "author": {
+    "name": "ilanvkn",
+    "url": "https://github.com/ilanvkn"
+  },
+  "repository": "https://github.com/ilanvkn/codex-engineering-plugins"
+}

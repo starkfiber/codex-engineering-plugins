@@ -1,0 +1,426 @@
+{
+  "name": "apple",
+  "version": "2.0.0-alpha.3",
+  "files": [
+    {
+      "path": ".codex-plugin/mcp.json",
+      "sha256": "78ebf4e895827c4116c27a919b2261440f6c69f92c663ce79f2be5677f17d538"
+    },
+    {
+      "path": ".codex-plugin/plugin.json",
+      "sha256": "e215416ce4931caf0d3840fd6f7db372d68ce12a12477e77948b313ed0bba2d9"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "9f66c1712a255cf879a2b9e54dd197dc6678810a37f53cea217a18ae0e6b3ff2"
+    },
+    {
+      "path": "README.md",
+      "sha256": "b32123bccb3eb26c44f56aedf31ff0a25b20fb69d580359565e50e0359fa4245"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "54ade2c548e323d0c1ef890a544c696a946358e87eb3dc9462d75a55548a2288"
+    },
+    {
+      "path": "docs/STATUS.md",
+      "sha256": "6ae9598186eb4e76147cba52f0441e07509e2ef827791f36d16266c125c32d2d"
+    },
+    {
+      "path": "examples/BlueprintSample/Info.plist",
+      "sha256": "35ae79f0d4f974141829dcc7e9e7aeca314d26b9df9119cf7cc891fdd8476f19"
+    },
+    {
+      "path": "examples/BlueprintSample/Package.swift",
+      "sha256": "2410a32438aedb50ed6464567ae5123c2e851cd2784626c21578fb0c1350436e"
+    },
+    {
+      "path": "examples/BlueprintSample/Sources/BehaviorCheck/main.swift",
+      "sha256": "bcd2bc857b5b4c607d3d0de3b30205fce7deb0920a17601ead7222da8d44bebf"
+    },
+    {
+      "path": "examples/BlueprintSample/Sources/BlueprintDemo/BlueprintDemo.swift",
+      "sha256": "4bc5f9ced3122ec6846b7143d28f910a89a656d306ced455d93001318ead4f5c"
+    },
+    {
+      "path": "examples/BlueprintSample/Sources/BlueprintSample/DiagnosticEdgeCases.swift",
+      "sha256": "0eacbc9f1368703c1aa76e1213d50a32b739dc71f68fde5f9e66d100eabfddd0"
+    },
+    {
+      "path": "examples/BlueprintSample/Sources/BlueprintSample/FixtureAdmission.swift",
+      "sha256": "af5ed8f9aff8bd3188045f89cf0342c7fb26c48d404185961969a8320c5a5f30"
+    },
+    {
+      "path": "examples/BlueprintSample/Sources/BlueprintSample/NativeLibrary.swift",
+      "sha256": "db5fd6ff1b95626df2964deb9bd9ac8c320ae1f286e25d257ae605e0e3eded6d"
+    },
+    {
+      "path": "examples/BlueprintSample/Sources/BlueprintSample/OperationsHome.swift",
+      "sha256": "f175910b32f505d09c114980c729c83e879311cbfe31de250c9558ed94f1927a"
+    },
+    {
+      "path": "examples/BlueprintSample/Sources/BlueprintSample/ResearchContracts.swift",
+      "sha256": "68bc649f70e3a7d30d031cc5d07a12278dd27622e98d1c9d6e0f3203057553dd"
+    },
+    {
+      "path": "examples/BlueprintSample/Sources/BlueprintSample/ResearchDiagnosticsView.swift",
+      "sha256": "e263abf539028790d8ff5c711aacb101001d8942e385eee0e19fa6d1a2a7b967"
+    },
+    {
+      "path": "examples/BlueprintSample/Sources/BlueprintSample/Transfer.swift",
+      "sha256": "0af0597eab8149e66bb87e15ba4557ee728dc4a3f65c3b57f992108836bf9749"
+    },
+    {
+      "path": "examples/BlueprintSample/Sources/BlueprintSample/TransferView.swift",
+      "sha256": "5b7d9d2a05f32c11a3ea92c87fb5f7fcb1773e901191e8aaf79369b22eeff13e"
+    },
+    {
+      "path": "examples/BlueprintSample/Sources/BlueprintSample/WaterRibbon.swift",
+      "sha256": "211f351318f6c7d5bf8ceff6dcd053629ce48a41b7b68ee7efa9a9720bcb95c6"
+    },
+    {
+      "path": "examples/BlueprintSample/Tests/BlueprintSampleTests/TransferTests.swift",
+      "sha256": "94fdee4bc24508892c41eea5cb07dd9f8f229f9970039118b82889ffd4451c0b"
+    },
+    {
+      "path": "scripts/build-mac-lab.sh",
+      "sha256": "b66763085d8a8d340e059948534b970425c4adc5ac2a45f476e326f52c27f638"
+    },
+    {
+      "path": "scripts/evaluate-routing.mjs",
+      "sha256": "3522607e94b8b63e36127272f916d02ce3ccdef53525a4a0fec25f8ce4bca430"
+    },
+    {
+      "path": "scripts/evidence.mjs",
+      "sha256": "bb265868f6de8314c7e7259d384c0cfc730724d075061610f4855bd136b44f90"
+    },
+    {
+      "path": "scripts/launch-mcp.sh",
+      "sha256": "75b9101a3f1263cf20696ea6dfefa173c07f9021a9e4c8561260f624564acd6b"
+    },
+    {
+      "path": "scripts/mcp-config.mjs",
+      "sha256": "a9b9e8610557663c38ed6e98c6d71e06e724a38453b34248843feb6ccbfbaa89"
+    },
+    {
+      "path": "scripts/mcp-server.mjs",
+      "sha256": "dfa3a469b0b2f4a04c1245d6f37f4319a66c305565a47e35157a51a2be2c7247"
+    },
+    {
+      "path": "scripts/release-gates.mjs",
+      "sha256": "09a0b7dd69c68572762a25617e4e167aa0a46737c4100b3f5d03d7f17a9f8128"
+    },
+    {
+      "path": "scripts/verify-platforms.mjs",
+      "sha256": "1848d901d7aa459bd1a8a0bbff9e42e0c0e387b1d237ef9ed0a7d41fc03bd0d6"
+    },
+    {
+      "path": "skills/apple/SKILL.md",
+      "sha256": "6a73139218680a216b286cd545c67b4fca42b5cd09645d77ee3a5f69c048e309"
+    },
+    {
+      "path": "skills/apple/references/design.md",
+      "sha256": "ecc8b925c85f19727b591d8feecd294584be64c8b499f2c0209288ad05bb66c2"
+    },
+    {
+      "path": "skills/apple/references/engineering.md",
+      "sha256": "d575538766b3cd297933f3347b91433d027f57ba734e1112475ade241b1de484"
+    },
+    {
+      "path": "skills/apple/references/firmware.md",
+      "sha256": "eba414fd323531ab8ec95f546b8665d88bce6be04f57de286d70cefee7556333"
+    },
+    {
+      "path": "skills/apple/references/frameworks.md",
+      "sha256": "fdff9e5f5aa3ed6b2e40a432ebf72bbe7b8dd58f85807bdf2c7f81752ee99579"
+    },
+    {
+      "path": "skills/apple/references/objective-interface.md",
+      "sha256": "e461e702691df87d5767e44b381db5cf3b337562c7f96e4b25830b3649f2a012"
+    },
+    {
+      "path": "skills/apple/references/platforms.md",
+      "sha256": "9f5f935329d13297ed3d7eea1fca975920b5c327cb148e7053382d08b2ef9e93"
+    },
+    {
+      "path": "skills/apple/references/review-engine.md",
+      "sha256": "df093ddfea428698346ae8b0315f3a2810030d66e9595e38d5a3a6f9a9d28f28"
+    },
+    {
+      "path": "skills/apple/references/sources.md",
+      "sha256": "a263ba48585d0074e4b00c9f8dc89ac6f6353bed0ceb817565bbea7746a9b550"
+    },
+    {
+      "path": "skills/apple/references/swiftui-core.md",
+      "sha256": "8c85210d138d3efd3b69307078a19e013835f5d6d3e9e1058065fe459857d6f7"
+    },
+    {
+      "path": "skills/apple/references/vendor/apple-tvos/EVAL.md",
+      "sha256": "c50d23434993177eea1dee759863cb3ddc6c8b37fb8934946a0dbe513ca42141"
+    },
+    {
+      "path": "skills/apple/references/vendor/apple-tvos/LICENSE",
+      "sha256": "fff414f178e7e742c342cbdc51e759d3ffafc85b54eb1fcbb6e79267e93edbfe"
+    },
+    {
+      "path": "skills/apple/references/vendor/apple-tvos/SKILL.md",
+      "sha256": "2ad79f2b2dec6af64fb38f3ce9e437026d19ffe94ba1c6aa223ec75eba1d4712"
+    },
+    {
+      "path": "skills/apple/references/vendor/apple-tvos/evals/evals.json",
+      "sha256": "93588b2b8a6803ae610c54808d216f712594a542376dfbedd0fb38a3e884b271"
+    },
+    {
+      "path": "skills/apple/references/vendor/apple-tvos/evals/fixtures/animation-on-focusable.swift",
+      "sha256": "07bb6d3579011601939c39ac1d64c53d7d5316a65065b20e8f96afbb3e434210"
+    },
+    {
+      "path": "skills/apple/references/vendor/apple-tvos/evals/fixtures/container-focusable.swift",
+      "sha256": "464e0af1876812d1dc265dd9865c934d21ebfa1e2d6bb7ddf37f3abe4f228d7c"
+    },
+    {
+      "path": "skills/apple/references/vendor/apple-tvos/evals/fixtures/destructive-dialog.swift",
+      "sha256": "9c22928c59f85e63d357f6edc30305a9016a28bce55956a8d9e1a5493bd84c13"
+    },
+    {
+      "path": "skills/apple/references/vendor/apple-tvos/evals/fixtures/focus-helper-traits.swift",
+      "sha256": "5b28677150ec9ee7671254fa54864ffe917cc5d21ffa5d4f01b382b9e7ec2899"
+    },
+    {
+      "path": "skills/apple/references/vendor/apple-tvos/evals/fixtures/glass-on-glass.swift",
+      "sha256": "caf953f801f3f69cfb6556cf802bd324d4fe76dc29cadc9e7752396e27fc7a61"
+    },
+    {
+      "path": "skills/apple/references/vendor/apple-tvos/evals/fixtures/manual-focus-reassertion.swift",
+      "sha256": "00d2d6ad95dbd2093cd1be5b1bc84555928bbe154322f8ec85122bcb37d0e1ae"
+    },
+    {
+      "path": "skills/apple/references/vendor/apple-tvos/evals/fixtures/no-settle-delay.swift",
+      "sha256": "53571fa2b0029c810c999992f2e2249635e2cfaafb8dd72e4226cab825c4dec5"
+    },
+    {
+      "path": "skills/apple/references/vendor/apple-tvos/evals/fixtures/onexitcommand-correct.swift",
+      "sha256": "be7424aa027f7e522c1b71c01519c1f9f9ffd99b461c16faef0b485038445e34"
+    },
+    {
+      "path": "skills/apple/references/vendor/apple-tvos/evals/fixtures/paging-scroll.swift",
+      "sha256": "ba163d30ae78e2087dfa841afac6471168c43286e7a21db4e76d29e639512a25"
+    },
+    {
+      "path": "skills/apple/references/vendor/apple-tvos/evals/fixtures/plain-button-style.swift",
+      "sha256": "e10c2a1ea7d77650b83b210dde911643e13790ab60a0360a05ca42e63e53179e"
+    },
+    {
+      "path": "skills/apple/references/vendor/apple-tvos/evals/fixtures/pod-without-focusstate.swift",
+      "sha256": "9253556266982c53d8b3700e38e6db0af07237dcc0c549210eb4cda425c32fc9"
+    },
+    {
+      "path": "skills/apple/references/vendor/apple-tvos/evals/fixtures/text-only-scrollview.swift",
+      "sha256": "05d669615ef35ca5e04cb7445c936a584caaa02525949e3a86dd0db87025bbf4"
+    },
+    {
+      "path": "skills/apple/references/vendor/apple-tvos/evals/rules.json",
+      "sha256": "7d8113ebb02cabe623ccc4e70dcf0b4cd5b495c0139c559e97e039dc702e6421"
+    },
+    {
+      "path": "skills/apple/references/vendor/apple-tvos/references/accessibility.md",
+      "sha256": "bf38215d71a52f68250c100e811585527d09be307759ad1a92313e40c3b413fc"
+    },
+    {
+      "path": "skills/apple/references/vendor/apple-tvos/references/design-regressions.md",
+      "sha256": "0764d4660e2f01e86543097b51171030cf8f070581bb51ee543919dbd5b6c2aa"
+    },
+    {
+      "path": "skills/apple/references/vendor/apple-tvos/references/focus-engine.md",
+      "sha256": "af2fc21ba0644f2820349b46726a249eddf66444ceaa831d080e9035faa62c72"
+    },
+    {
+      "path": "skills/apple/references/vendor/apple-tvos/references/rules.md",
+      "sha256": "c5fb41ae821f4f966b9d45a38d14d959ce3b40c16c5cd941d80c844f53da0985"
+    },
+    {
+      "path": "skills/apple/references/vendor/ios-interface-design/.gitignore",
+      "sha256": "cf237c7aff44efbe6e502e645c3e06da03a69d7bdeb43392108ef3348143417e"
+    },
+    {
+      "path": "skills/apple/references/vendor/ios-interface-design/LICENSE",
+      "sha256": "b42ed1d75c27847d4c0ecef5b8235f9d34980983646f20e4db08b2f33ed95927"
+    },
+    {
+      "path": "skills/apple/references/vendor/ios-interface-design/README.md",
+      "sha256": "0f5229d87d2ee029d05017242bdc17e2d3b26814c2286f287cdbc34bc8b6f550"
+    },
+    {
+      "path": "skills/apple/references/vendor/ios-interface-design/SKILL.md",
+      "sha256": "c3bebd1c07fa6951d302b7b3f44c2f206735ff0d49716cef92c8f11767e39070"
+    },
+    {
+      "path": "skills/apple/references/vendor/ios-interface-design/references/backgrounds.md",
+      "sha256": "892fc804a4eb95a9ea9ccf3e0c962759077d6627c61dbf6c412b338feadab14f"
+    },
+    {
+      "path": "skills/apple/references/vendor/ios-interface-design/references/composition.md",
+      "sha256": "a5ebdfab333b2bdda1b6466807a6a7ec70b8b22296378074159e9d0f87617fbe"
+    },
+    {
+      "path": "skills/apple/references/vendor/ios-interface-design/references/examples/design-comparisons.png",
+      "sha256": "b58680785b7063178d6fac552ebfb8bff9de0afef85e86bceebbcba5a6e668d0"
+    },
+    {
+      "path": "skills/apple/references/vendor/ios-interface-design/references/examples/design-comparisons.svg",
+      "sha256": "42a52a53387f639489e6523529e4b41acaf3bb42bc9fd95b888a2dacb89b50d8"
+    },
+    {
+      "path": "skills/apple/references/vendor/ios-interface-design/references/examples/style-directions.png",
+      "sha256": "1c712361ee0829754c71a14277d233e1f708f8aabd98d7dee5126bc8bb4aa4f6"
+    },
+    {
+      "path": "skills/apple/references/vendor/ios-interface-design/references/examples/style-directions.svg",
+      "sha256": "b0f085eae0ad093d3cf9ac096a1e25af2e9f9b7bf96bc04c290a8264f80f9a68"
+    },
+    {
+      "path": "skills/apple/references/vendor/ios-interface-design/references/flow-consistency.md",
+      "sha256": "1f93df51d7ca4e04e6763cd373a439c511d410a5e5cccad5a95f7fc851f28b4d"
+    },
+    {
+      "path": "skills/apple/references/vendor/ios-interface-design/references/haptic-feedback.md",
+      "sha256": "060278f1fc205778b258791414e8b1dea6d45c653c492f0fdc5b39d5532bc17c"
+    },
+    {
+      "path": "skills/apple/references/vendor/ios-interface-design/references/headings-and-labels.md",
+      "sha256": "3ff2cadaf54a70aa57e21e65a4396a8cd1f5b580b02c815db66399cb422a285b"
+    },
+    {
+      "path": "skills/apple/references/vendor/ios-interface-design/references/imagery.md",
+      "sha256": "7d4bf2a725530a517f237d65109dfc5002215faf18c3ceaff253921a87ea85d7"
+    },
+    {
+      "path": "skills/apple/references/vendor/ios-interface-design/references/ios-trends-2026.md",
+      "sha256": "ee92ced8635eed3add439223e8494c3e40484cbd540589d70779358e46e20c47"
+    },
+    {
+      "path": "skills/apple/references/vendor/ios-interface-design/references/loading-stability.md",
+      "sha256": "3e68c7f800df14592b922f9dd8040e439b74694c9a004b67f002ce48109d73aa"
+    },
+    {
+      "path": "skills/apple/references/vendor/ios-interface-design/references/native-implementation.md",
+      "sha256": "b2924f387b324013a331f4ea2df12483c43f725e44499e8a5ec9d89caf338fee"
+    },
+    {
+      "path": "skills/apple/references/vendor/ios-interface-design/references/optical-details.md",
+      "sha256": "0d1587b6fec4119d55e5a3b7b7b15f16d9ca0cfba413163782019feb62416e59"
+    },
+    {
+      "path": "skills/apple/references/vendor/ios-interface-design/references/style-families.md",
+      "sha256": "a2fd7a8daa773c23db6353f513f4275d212688550d69618260b1ae0c5223fde6"
+    },
+    {
+      "path": "skills/apple/references/vendor/ios-interface-design/references/style-specification.md",
+      "sha256": "841a81fa168a0936754c2446ed551638bcfb07b37636b9a17fba33a9558e2ace"
+    },
+    {
+      "path": "skills/apple/references/vendor/ios-interface-design/references/tool-workflow.md",
+      "sha256": "ce53968cd0481e2106f29e1e5e2a900bc56c10727c5a35ca377b73f79db779d4"
+    },
+    {
+      "path": "skills/apple/references/vendor/ios-interface-design/references/visual-direction.md",
+      "sha256": "439010cfabc1abfd9cdc1f319813f41638469d6d17c707dd4326a5f10a9b6ef6"
+    },
+    {
+      "path": "skills/apple/references/vendor/ios-interface-design/references/visual-examples.md",
+      "sha256": "7e4c9388e6b2de3f5d8bb002672e1970a4c08ad79cd3c26c7d75ccccf67b75df"
+    },
+    {
+      "path": "skills/apple/references/vendor/ios-interface-design/references/visual-review.md",
+      "sha256": "42862c3e9932d6cce5c8914ae94017f32a6f80c3cf20a10fb1a6ac291d990a94"
+    },
+    {
+      "path": "skills/apple/references/vendor/swiftui-design-tokens/EVAL.md",
+      "sha256": "4272f4c19937dbf053b20ced3ce5b3e2f179658081f2f96c8c4d1d7db67736fd"
+    },
+    {
+      "path": "skills/apple/references/vendor/swiftui-design-tokens/LICENSE",
+      "sha256": "fff414f178e7e742c342cbdc51e759d3ffafc85b54eb1fcbb6e79267e93edbfe"
+    },
+    {
+      "path": "skills/apple/references/vendor/swiftui-design-tokens/SKILL.md",
+      "sha256": "f24d9b5d590efa0cd31b72ecafee9f0734f6df6a83c172020aa7f5f6f116c449"
+    },
+    {
+      "path": "skills/apple/references/vendor/swiftui-design-tokens/references/application-recipes.md",
+      "sha256": "3979c5313a366456ef96a397c1b3dbb1ceaaa1334985293ba12515b2b0dfd062"
+    },
+    {
+      "path": "skills/apple/references/vendor/swiftui-design-tokens/references/motion-tokens.md",
+      "sha256": "6d287b9829c1e3bd18baf21067b26f6e351d82ccb72aa8e6ae6a0925b12c1516"
+    },
+    {
+      "path": "skills/apple/references/vendor/swiftui-design-tokens/references/token-values.md",
+      "sha256": "19e8d415300f103be1dfd3cd763d254f555f81db8986d9d123926e391c1e91f4"
+    },
+    {
+      "path": "skills/apple/references/vendor/swiftui-design-tokens/scripts/audit-hardcoded-tokens.sh",
+      "sha256": "5a1a4aba84f667a0a8befaa27f6ad5ff94693b8d9d63e7a6744f6f7aebbfa9e8"
+    },
+    {
+      "path": "skills/apple/references/verification.md",
+      "sha256": "22da30d4f0bfc46de44169d91deba937e1af6557ee8c9ad73901602b37fd8bf0"
+    },
+    {
+      "path": "skills/apple/registry.json",
+      "sha256": "eee696db14520b8749aab55b47c947633cc07813cb7161cae2e8ae32e67b6f90"
+    },
+    {
+      "path": "skills/apple/scripts/apple.mjs",
+      "sha256": "6877eb78838fe05094366d01d279e3b5169f390747eaaf6c0e7d8ec2694903e7"
+    },
+    {
+      "path": "skills/apple/scripts/firmware-plan.mjs",
+      "sha256": "4b76ca5e145c587f722eef81ec3d5f7a43adc429649120b020d0567c50363413"
+    },
+    {
+      "path": "skills/apple/scripts/workbench.mjs",
+      "sha256": "ba4c86bf23d87f35c6ec0746557c7eea4e8309ad54cc23e06bd8e83431ca5c01"
+    },
+    {
+      "path": "tests/apple.test.mjs",
+      "sha256": "5b9aabb40ce6e1583efb2407b1301e4ecb2648ac5188d1917de5110fd1227c6d"
+    },
+    {
+      "path": "tests/evidence.test.mjs",
+      "sha256": "a6fc628f03919f72966396d3c9bac3f864b2c4d6d35c9db03b89d7366b9d8dec"
+    },
+    {
+      "path": "tests/firmware-plan.test.mjs",
+      "sha256": "0bfc024f0ea5736e48132e333c6f425d69a36188da200d7c0c7d9433ec1db045"
+    },
+    {
+      "path": "tests/fixtures/routing.json",
+      "sha256": "af1bc6548a2a3ce6d9f915240a4f11bf45aa59b87bdb0e0cb4cc8bfcd9e4eb6c"
+    },
+    {
+      "path": "tests/launcher.test.mjs",
+      "sha256": "93bcb062b332eedd3d0b346aa8de3889e63c96211bc66b178ad47664c6f8b8e5"
+    },
+    {
+      "path": "tests/mcp.test.mjs",
+      "sha256": "a494b97d6a564003350ab0869787a485cbd9d37b4835b4664cb4a3c9dfeeec5f"
+    },
+    {
+      "path": "tests/release-gates.test.mjs",
+      "sha256": "d47e38f1ff57f0f635e1b13130c4b76214ed5e3832c65b7ea2dfa406812069b8"
+    },
+    {
+      "path": "tests/relocation.test.mjs",
+      "sha256": "a984afdfb1554bc4d20fe0e5c2473d8f1447469ecee941565b81e42f74f18399"
+    },
+    {
+      "path": "tests/routing-regression.test.mjs",
+      "sha256": "4baa88c5a6238526b6d807e2506542236e304f42a0e4b324d39a58060b8d5b76"
+    },
+    {
+      "path": "tests/workbench.test.mjs",
+      "sha256": "18d004240e0ab0bd6829306df5fad385d320fe2be3a5f739770008503837f78e"
+    }
+  ]
+}

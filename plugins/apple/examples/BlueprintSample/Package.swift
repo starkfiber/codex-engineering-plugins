@@ -1,0 +1,3 @@
+// swift-tools-version: 6.0
+import PackageDescription
+let package = Package(name: "BlueprintSample", platforms: [.macOS(.v15), .iOS(.v17), .watchOS(.v10), .tvOS(.v17), .visionOS(.v1)], products: [.library(name: "BlueprintSample", targets: ["BlueprintSample"]), .executable(name: "BlueprintDemo", targets: ["BlueprintDemo"])], targets: [.target(name: "BlueprintSample"), .executableTarget(name: "BlueprintDemo", dependencies: ["BlueprintSample"]), .executableTarget(name: "BehaviorCheck", dependencies: ["BlueprintSample"]), .testTarget(name: "BlueprintSampleTests", dependencies: ["BlueprintSample"])])

@@ -1,0 +1,44 @@
+{
+  "result": {
+    "structuredContent": {
+      "evidence_id": "synthetic-partial",
+      "operation": "inspect_analysis_view",
+      "subject": {
+        "digest": {
+          "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        },
+        "local_path": "synthetic/owned-fixture.js"
+      },
+      "normalized_result": {
+        "kind": "summary",
+        "parent_operation": "analyze_javascript_application",
+        "artifact": {
+          "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "path": "synthetic/owned-fixture.js"
+        },
+        "coverage": {
+          "status": "complete-within-view"
+        },
+        "summary": {
+          "statistics": {
+            "parsed_javascript_files": 0,
+            "skipped_javascript_files": 0,
+            "parse_failures": 0,
+            "visited_ast_nodes": 0
+          },
+          "coverage": {
+            "application": {
+              "status": "partial",
+              "truncated": false
+            },
+            "semantic": {
+              "status": "unknown",
+              "truncated": false,
+              "families": []
+            }
+          }
+        }
+      }
+    }
+  }
+}

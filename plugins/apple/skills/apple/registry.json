@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "version": "2.0.0-alpha.3",
+  "platforms": [
+    "macOS",
+    "iOS",
+    "iPadOS",
+    "watchOS",
+    "tvOS",
+    "visionOS"
+  ],
+  "modules": [
+    {
+      "id": "engineering",
+      "reference": "engineering.md",
+      "terms": [
+        "swift",
+        "build",
+        "debug",
+        "crash",
+        "concurrency",
+        "download",
+        "app",
+        "implement",
+        "fix"
+      ],
+      "frameworks": [
+        "Foundation",
+        "SwiftUI",
+        "SwiftData",
+        "Core Data",
+        "URLSession"
+      ]
+    },
+    {
+      "id": "design",
+      "reference": "design.md",
+      "terms": [
+        "design",
+        "ui",
+        "ux",
+        "hig",
+        "accessibility",
+        "voiceover",
+        "dynamic type",
+        "reduce motion",
+        "typography",
+        "token",
+        "glass"
+      ],
+      "frameworks": [
+        "SwiftUI",
+        "UIKit",
+        "AppKit"
+      ]
+    },
+    {
+      "id": "platforms",
+      "reference": "platforms.md",
+      "terms": [
+        "macos",
+        "mac",
+        "iphone",
+        "ipad",
+        "ios",
+        "watchos",
+        "watch",
+        "tvos",
+        "apple tv",
+        "visionos",
+        "vision",
+        "catalyst",
+        "carplay"
+      ],
+      "frameworks": []
+    },
+    {
+      "id": "frameworks",
+      "reference": "frameworks.md",
+      "terms": [
+        "widget",
+        "widgetkit",
+        "activitykit",
+        "live activity",
+        "live activities",
+        "intent",
+        "healthkit",
+        "storekit",
+        "cloudkit",
+        "realitykit",
+        "watchconnectivity",
+        "notification",
+        "carplay"
+      ],
+      "frameworks": [
+        "WidgetKit",
+        "ActivityKit",
+        "App Intents",
+        "HealthKit",
+        "StoreKit",
+        "CloudKit",
+        "RealityKit",
+        "WatchConnectivity"
+      ]
+    },
+    {
+      "id": "verification",
+      "reference": "verification.md",
+      "terms": [
+        "build",
+        "test",
+        "verify",
+        "verification",
+        "release",
+        "signing",
+        "install",
+        "run",
+        "menu bar",
+        "menu-bar"
+      ],
+      "frameworks": [
+        "XCTest",
+        "Swift Testing"
+      ]
+    },
+    {
+      "id": "firmware",
+      "reference": "firmware.md",
+      "terms": [
+        "ipsw",
+        "firmware",
+        "dfu",
+        "downgrade",
+        "restore device"
+      ],
+      "frameworks": []
+    },
+    {
+      "id": "sources",
+      "reference": "sources.md",
+      "terms": [
+        "compare",
+        "source",
+        "license",
+        "upstream",
+        "update skill"
+      ],
+      "frameworks": []
+    }
+  ],
+  "specialists": [
+    {
+      "id": "ios-interface-design",
+      "path": "references/vendor/ios-interface-design/SKILL.md",
+      "source": "https://github.com/tn/ios-interface-design",
+      "revision": "ea3c342b8cb58abe3258e88b0321eed4674a6f5d",
+      "license": "MIT",
+      "licensePath": "references/vendor/ios-interface-design/LICENSE",
+      "verification": "source-reviewed"
+    },
+    {
+      "id": "swiftui-design-tokens",
+      "path": "references/vendor/swiftui-design-tokens/SKILL.md",
+      "source": "https://github.com/eworthing/agent-skills",
+      "revision": "090e206ad8b7d1cb157380355a508e826e01655f",
+      "license": "MIT",
+      "licensePath": "references/vendor/swiftui-design-tokens/LICENSE",
+      "verification": "source-reviewed"
+    },
+    {
+      "id": "apple-tvos",
+      "path": "references/vendor/apple-tvos/SKILL.md",
+      "source": "https://github.com/eworthing/agent-skills",
+      "revision": "090e206ad8b7d1cb157380355a508e826e01655f",
+      "license": "MIT",
+      "licensePath": "references/vendor/apple-tvos/LICENSE",
+      "verification": "source-reviewed"
+    }
+  ]
+}

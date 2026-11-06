@@ -1,0 +1,32 @@
+{
+  "name": "engineering-plugins",
+  "interface": {
+    "displayName": "Engineering Plugins"
+  },
+  "plugins": [
+    {
+      "name": "reverse-lab",
+      "source": {
+        "source": "local",
+        "path": "./plugins/reverse-lab"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "apple",
+      "source": {
+        "source": "local",
+        "path": "./plugins/apple"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

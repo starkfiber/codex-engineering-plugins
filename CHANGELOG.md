@@ -1,0 +1,9 @@
+# Community release notes — 2026-11-06
+
+## Reverse Lab3.3.2
+
+First portable public marketplace package of original skills/helpers. Explicitly separates third-party REA from the default skill install; adds a pinned optional bridge, synthetic public coverage fixtures, reviewed manifests and community documentation. The previous machine-specific engine-copy/config-migration installer is not the public installation path. Existing private local installations are not silently migrated.
+
+## Apple Blueprint2.0.0-alpha.3
+
+First reviewed public package of the Swift/native workflow, three read-only MCP helpers, selected intact MIT references, portable tests and synthetic Swift sample. Excludes private research logs and old release-evidence records; neutralizes the example-client identity. Remains alpha; current runtime/hardware acceptance is not inferred from historical source.

@@ -1,0 +1,35 @@
+import {spawnSync} from 'node:child_process';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import os from 'node:os';
+import {fileURLToPath} from 'node:url';
+import assert from 'node:assert/strict';
+const root=await fs.mkdtemp(path.join(os.tmpdir(),'reverse-lab-case-test-'));
+const script=fileURLToPath(new URL('./skills/reverse-lab/scripts/case.mjs',import.meta.url));
+const dir=path.join(root,'case');const artifact=path.join(root,'bundle.js');
+let passed=0;
+function run(args,expected=0){const p=spawnSync(process.execPath,[script,...args],{encoding:'utf8'});assert.equal(p.status,expected,p.stderr);passed++;return p.stdout;}
+run(['init',dir,'Understand import behavior']);
+run(['init',dir,'Overwrite objective'],1);
+assert.equal(JSON.parse(await fs.readFile(path.join(dir,'case.json'))).objective,'Understand import behavior');
+await fs.writeFile(artifact,'export const value = 1;');
+run(['record',dir,artifact,'Initial bundle']);
+assert.equal(JSON.parse(run(['verify',dir])).checked,1);
+await fs.writeFile(artifact,'export const value = 2;');
+assert.equal(JSON.parse(run(['verify',dir],2)).results[0].status,'changed');
+await fs.unlink(artifact);
+assert.equal(JSON.parse(run(['verify',dir],2)).results[0].status,'unreadable');
+const indexBefore=await fs.readFile(path.join(dir,'evidence.json'),'utf8');
+run(['record',dir,artifact,'Missing file'],1);
+assert.equal(await fs.readFile(path.join(dir,'evidence.json'),'utf8'),indexBefore);
+await fs.writeFile(artifact,'restored');
+await fs.writeFile(path.join(dir,'.evidence.lock'),'another writer');
+run(['record',dir,artifact,'Concurrent update'],1);
+assert.equal(await fs.readFile(path.join(dir,'.evidence.lock'),'utf8'),'another writer');
+await fs.unlink(path.join(dir,'.evidence.lock'));
+run(['record',dir,path.join(dir,'evidence.json'),'Bookkeeping'],1);
+run(['record',dir,artifact,'Updated bundle']);
+run(['init','relative-case','Bad path'],1);
+console.log(JSON.stringify({passed,caseDirectory:dir,checks:['initialization','overwrite refusal','record and hash verification','changed evidence','missing evidence','failed write preserves index','writer lock preserved','mutable bookkeeping rejected','valid subsequent record','absolute path required']}));
+
+await fs.rm(root,{recursive:true,force:true});

@@ -1,0 +1,54 @@
+{
+  "result": {
+    "structuredContent": {
+      "evidence_id": "synthetic-public-fixture",
+      "operation": "analyze_javascript_application",
+      "subject": {
+        "digest": {
+          "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        },
+        "local_path": "synthetic/owned-fixture.js"
+      },
+      "normalized_result": {
+        "root_artifact_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "source_selection": [
+          "owned-fixture.js"
+        ],
+        "statistics": {
+          "parsed_javascript_files": 2,
+          "skipped_javascript_files": 0,
+          "parse_failures": 0,
+          "visited_ast_nodes": 40
+        },
+        "graph": {
+          "coverage": {
+            "status": "complete",
+            "truncated": false,
+            "omitted_count": 0
+          }
+        },
+        "semantic_graph": {
+          "coverage": {
+            "status": "unknown",
+            "truncated": false,
+            "families": [
+              {
+                "family": "ownership",
+                "status": "unknown"
+              }
+            ]
+          }
+        }
+      },
+      "limitations": [
+        "Synthetic schema fixture, not an engine observation."
+      ]
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\": \"synthetic-public-fixture\", \"operation\": \"analyze_javascript_application\", \"subject\": {\"digest\": {\"sha256\": \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"}, \"local_path\": \"synthetic/owned-fixture.js\"}, \"normalized_result\": {\"root_artifact_sha256\": \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\", \"source_selection\": [\"owned-fixture.js\"], \"statistics\": {\"parsed_javascript_files\": 2, \"skipped_javascript_files\": 0, \"parse_failures\": 0, \"visited_ast_nodes\": 40}, \"graph\": {\"coverage\": {\"status\": \"complete\", \"truncated\": false, \"omitted_count\": 0}}, \"semantic_graph\": {\"coverage\": {\"status\": \"unknown\", \"truncated\": false, \"families\": [{\"family\": \"ownership\", \"status\": \"unknown\"}]}}}, \"limitations\": [\"Synthetic schema fixture, not an engine observation.\"]}"
+      }
+    ]
+  }
+}

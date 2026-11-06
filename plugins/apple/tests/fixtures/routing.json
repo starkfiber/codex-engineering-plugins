@@ -1,0 +1,14 @@
+[
+ {"task":"Improve VoiceOver reading order in an iPhone form","required":["design.md","platforms.md"]},
+ {"task":"Investigate a Swift actor isolation error","required":["engineering.md"]},
+ {"task":"Make Apple TV focus return after dismissing a sheet","required":["platforms.md"]},
+ {"task":"Add a WidgetKit complication to watchOS","required":["frameworks.md","platforms.md"]},
+ {"task":"Review privacy and signing before release","required":["verification.md"]},
+ {"task":"Audit iPad keyboard navigation accessibility","required":["design.md","platforms.md"]},
+ {"task":"Inspect a firmware IPSW checksum","required":["firmware.md"]},
+ {"task":"Compare upstream license changes","required":["sources.md"]},
+ {"task":"Build a RealityKit volume for visionOS","required":["engineering.md","frameworks.md","platforms.md"]},
+ {"task":"Fix URLSession download cancellation","required":["engineering.md"]},
+ {"task":"Style a native macOS settings UI","required":["design.md","platforms.md"]},
+ {"task":"Explain SwiftData migration failure","required":["engineering.md"]}
+]
