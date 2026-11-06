@@ -15,3 +15,6 @@ local.properties
 **/.swiftpm/
 
 **/dist/
+
+**/__pycache__/
+*.pyc

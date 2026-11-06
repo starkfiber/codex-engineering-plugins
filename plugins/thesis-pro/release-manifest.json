@@ -1,0 +1,50 @@
+{
+  "name": "thesis-pro",
+  "version": "0.2.0-alpha.1",
+  "files": [
+    {
+      "path": ".codex-plugin/mcp.json",
+      "sha256": "ae8dfe699d657b28de88db91174038eec3b4bb8d43fd18ba0158868371b35b2b"
+    },
+    {
+      "path": ".codex-plugin/plugin.json",
+      "sha256": "df47ecc8802aad3d9b9447f0d2115d741d5186cdb224aff478167f22779ed7f0"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "9f66c1712a255cf879a2b9e54dd197dc6678810a37f53cea217a18ae0e6b3ff2"
+    },
+    {
+      "path": "README.md",
+      "sha256": "7632df225afb40c4f05d232964e25d0e97d8550231ca8a9c3a75a10c80c15bc1"
+    },
+    {
+      "path": "examples/synthetic-study.md",
+      "sha256": "a6a67a671696f78431092031380d49d4b132841db5d531603cea638953a7207e"
+    },
+    {
+      "path": "scripts/launch-mcp.sh",
+      "sha256": "795df73f9261244f302095ed24862d151345d66de46da2b5ddf09491b074b22d"
+    },
+    {
+      "path": "scripts/thesis_pro_mcp.py",
+      "sha256": "7152afa48040433681fc84c0aa0e9d12773d003b2baca4787008dd744ffd1341"
+    },
+    {
+      "path": "skills/thesis-pro/SKILL.md",
+      "sha256": "b3c70807a79dc346fac67a58844a2f12916ad9c52e87304329678620e4675d57"
+    },
+    {
+      "path": "skills/thesis-pro/academic-operating-instructions.md",
+      "sha256": "aac8543198408cc0e42c8a55c944369b91f5a4796e817b2ca29c242150b4480a"
+    },
+    {
+      "path": "tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tests/test_thesis.py",
+      "sha256": "a300c056bc763e335e24f63df65d22035931b31db0a1eca6ad9b6430d5186908"
+    }
+  ]
+}

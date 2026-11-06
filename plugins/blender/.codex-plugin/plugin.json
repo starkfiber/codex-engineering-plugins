@@ -1,0 +1,16 @@
+{
+  "name": "blender",
+  "version": "0.1.0-alpha.1",
+  "description": "Create and verify game-ready Blender assets using focused workflows and a scene-audit helper.",
+  "skills": "./skills",
+  "author": {
+    "name": "ilanvkn",
+    "url": "https://github.com/ilanvkn"
+  },
+  "repository": "https://github.com/ilanvkn/codex-engineering-plugins",
+  "interface": {
+    "displayName": "Blender Asset Lab",
+    "shortDescription": "Build and audit game-ready Blender assets",
+    "category": "Developer Tools"
+  }
+}

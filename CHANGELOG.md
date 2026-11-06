@@ -11,3 +11,7 @@ First portable public marketplace package of original skills/helpers. Explicitly
 ## Apple Blueprint2.0.0-alpha.3
 
 First reviewed public package of the Swift/native workflow, three read-only MCP helpers, selected intact MIT references, portable tests and synthetic Swift sample. Excludes private research logs and old release-evidence records; neutralizes the example-client identity. Remains alpha; current runtime/hardware acceptance is not inferred from historical source.
+
+## Thesis Pro0.2.0-alpha.1 and Blender Asset Lab0.1.0-alpha.1
+
+Add reviewed community plugin packages with MIT original source, portable installation notes and synthetic verification. Thesis Pro repairs export traversal and atomic persistence; Blender includes a real headless audit smoke. No actual thesis projects, media libraries or third-party game assets are included.

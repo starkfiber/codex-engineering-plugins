@@ -1,0 +1,54 @@
+{
+  "name": "blender",
+  "version": "0.1.0-alpha.1",
+  "files": [
+    {
+      "path": ".codex-plugin/plugin.json",
+      "sha256": "192dac271668f0a03c1d5cc845cf72f0fb0127d9d9e9bd6e8dd645f96495c164"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "9f66c1712a255cf879a2b9e54dd197dc6678810a37f53cea217a18ae0e6b3ff2"
+    },
+    {
+      "path": "README.md",
+      "sha256": "e30a4cb33c62b9187f3087348adb11e27e0b01ed5831ce2dd5cdb903bd859d44"
+    },
+    {
+      "path": "skills/blender-3d-asset-generation/SKILL.md",
+      "sha256": "329825526622cc51e9f8428434bd7bfd981bf33e3b4ea798095f2a82712dc3ad"
+    },
+    {
+      "path": "skills/blender-3d-asset-generation/agents/openai.yaml",
+      "sha256": "58e18a949a434f89455d3bf6e46fa7ec451a4dec4b584aca0c86a59d50e350b9"
+    },
+    {
+      "path": "skills/blender-3d-asset-generation/assets/icon.svg",
+      "sha256": "9f48aac5d0a7c7d2597be863c6bcb8e7ec2658f04c0e3e0a950973c224a2db44"
+    },
+    {
+      "path": "skills/blender-3d-asset-generation/references/automation-and-qa.md",
+      "sha256": "74a5781e8b95544434754bd680457f428939faaaa720defa17e51f9cb8e5a6f3"
+    },
+    {
+      "path": "skills/blender-3d-asset-generation/references/blender-core.md",
+      "sha256": "a10a0a8f2e355acfb00293a231cb4e5449a1fa2136241fb8e6ee81c4cb0f9076"
+    },
+    {
+      "path": "skills/blender-3d-asset-generation/references/game-ready-assets.md",
+      "sha256": "783191843f9429998092887420914c25ab0586c58970e0e0a039b054cf11fdbe"
+    },
+    {
+      "path": "skills/blender-3d-asset-generation/references/official-blender-sources.md",
+      "sha256": "2faf4d3cd7674fc19a46304100bc3ee6ca4714aa86ce17d9d8c6fba31c43d820"
+    },
+    {
+      "path": "skills/blender-3d-asset-generation/scripts/audit_blender_asset.py",
+      "sha256": "0be074c7f2645e32df73114ee41bb79b0d336068afb3e5b57f37112efc4a22f6"
+    },
+    {
+      "path": "tests/blender_smoke.py",
+      "sha256": "fd7272a8393641ffdc72f7baa061878479acbdb664296ad86424f041073cb1f2"
+    }
+  ]
+}

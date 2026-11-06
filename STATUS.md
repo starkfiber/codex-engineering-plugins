@@ -21,3 +21,7 @@ The corrected native sample was launched in an isolated review app. macOS receip
 The user retained the full V3 contract. Apple remains alpha: six platform interaction suites, live runtime integration, independent evaluation, complete accessibility/performance, recovery, clean-host and upgrade/rollback acceptance are still required. See [the current gate ledger](plugins/apple/docs/V3-QUALIFICATION.md) and [the full contract](plugins/apple/docs/V3-EXIT-CONTRACT.md).
 
 Binary property-list inspection uses the macOS plutil utility; that one test is explicitly skipped on Linux. Routing/hash/other portable helper checks still run there. The default archive tests require zip/unzip installed on the CI host.
+
+## Additional community packages (2026-11-06)
+
+Thesis Pro0.2.0-alpha.1 adds a portable stdlib Python MCP notebook, seven synthetic tests and a proposal-only example. Publication review corrected export path traversal, project identity/symlink handling and atomic project writes. The configured Python worker passed all seven reviewed tests with verified cleanup and released lease; this is code-test evidence, not academic review. Blender Asset Lab0.1.0-alpha.1 packages the original asset skill and audit helper. Actual Blender5.2.1LTS smoke accepts a valid cube and rejects triangle-budget/unapplied-scale failures. Blender is not bundled; the default CI does not establish Blender or engine-runtime behavior. Existing local personal installations are not automatically migrated.
