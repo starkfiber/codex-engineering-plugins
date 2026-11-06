@@ -15,3 +15,7 @@ First reviewed public package of the Swift/native workflow, three read-only MCP 
 ## Thesis Pro0.2.0-alpha.1 and Blender Asset Lab0.1.0-alpha.1
 
 Add reviewed community plugin packages with MIT original source, portable installation notes and synthetic verification. Thesis Pro repairs export traversal and atomic persistence; Blender includes a real headless audit smoke. No actual thesis projects, media libraries or third-party game assets are included.
+
+## Thesis Pro0.2.0
+
+Qualify install-to-study-to-audit-to-export with a real MCP client and process restart. Add source/claim correction tools and retained correction history, separate main-text/reference counts without rewriting old projects, include the recorded source ledger in exports and omit empty chapters. Ten regression tests plus the repeatable12tool workflow pass; a structural audit pass remains distinct from a finished manuscript or academic approval.

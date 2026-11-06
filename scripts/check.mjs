@@ -4,3 +4,5 @@ const commands=[...['test-case-helper.mjs','test-case-regressions.mjs','test-evi
 for(const args of commands){const r=spawnSync(process.execPath,args,{stdio:'inherit',cwd:root,timeout:120000});if(r.status!==0)process.exit(r.status??1);}
 
 const thesis=spawnSync('python3',['-B','-m','unittest','discover','-s',root+'plugins/thesis-pro/tests','-v'],{stdio:'inherit',cwd:root,timeout:30000});if(thesis.status!==0)process.exit(thesis.status??1);
+
+const study=spawnSync(process.execPath,[root+'plugins/thesis-pro/scripts/study-flow.mjs'],{stdio:'inherit',cwd:root,timeout:60000});if(study.status!==0)process.exit(study.status??1);

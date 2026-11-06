@@ -1,6 +1,6 @@
 {
   "name": "thesis-pro",
-  "version": "0.2.0-alpha.1",
+  "version": "0.2.0",
   "files": [
     {
       "path": ".codex-plugin/mcp.json",
@@ -8,7 +8,7 @@
     },
     {
       "path": ".codex-plugin/plugin.json",
-      "sha256": "df47ecc8802aad3d9b9447f0d2115d741d5186cdb224aff478167f22779ed7f0"
+      "sha256": "c22b2983ff71d881866d6029d468b2cce7cad13b02d3b7adc9aa0ce4eeb5617a"
     },
     {
       "path": "LICENSE",
@@ -16,19 +16,31 @@
     },
     {
       "path": "README.md",
-      "sha256": "7632df225afb40c4f05d232964e25d0e97d8550231ca8a9c3a75a10c80c15bc1"
+      "sha256": "996a7cc3085376a1f2b13b584d67f64a3d8f75d0751434025c60997734e590da"
+    },
+    {
+      "path": "docs/WALKTHROUGH.md",
+      "sha256": "6fc2c1843e9056d63a8628ead19bee10eef0bbbd8e1d11376532bf254e6a1005"
     },
     {
       "path": "examples/synthetic-study.md",
       "sha256": "a6a67a671696f78431092031380d49d4b132841db5d531603cea638953a7207e"
     },
     {
+      "path": "examples/worked-proposal.md",
+      "sha256": "523473910d1339790fcf094a60c74df8c47ddc69f7667aeddd53bec27ba0cbaf"
+    },
+    {
       "path": "scripts/launch-mcp.sh",
       "sha256": "795df73f9261244f302095ed24862d151345d66de46da2b5ddf09491b074b22d"
     },
     {
+      "path": "scripts/study-flow.mjs",
+      "sha256": "d26bd09d425e73744d34dd480ae8283266870ad4b26b543eaaca031307d7b6cd"
+    },
+    {
       "path": "scripts/thesis_pro_mcp.py",
-      "sha256": "7152afa48040433681fc84c0aa0e9d12773d003b2baca4787008dd744ffd1341"
+      "sha256": "3372d37bd682292ff36f35eb56069acf675ae5376be96dc7d2b9cfea4b1de216"
     },
     {
       "path": "skills/thesis-pro/SKILL.md",
@@ -44,7 +56,7 @@
     },
     {
       "path": "tests/test_thesis.py",
-      "sha256": "a300c056bc763e335e24f63df65d22035931b31db0a1eca6ad9b6430d5186908"
+      "sha256": "1bcedd4783be3f4d729e310578311644e2aec981371458ff027c8782cb1de880"
     }
   ]
 }

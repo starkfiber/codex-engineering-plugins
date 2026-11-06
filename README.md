@@ -1,12 +1,17 @@
 # Codex Engineering Plugins
 
+![Build, investigate and verify with reusable engineering workflows](assets/engineering.svg)
+
+[![Package checks](https://github.com/ilanvkn/codex-engineering-plugins/actions/workflows/check.yml/badge.svg?branch=main)](https://github.com/ilanvkn/codex-engineering-plugins/actions/workflows/check.yml)
+[MIT license](LICENSE) · [Install](#install) · [Contribute](CONTRIBUTING.md) · [Report a bug](https://github.com/ilanvkn/codex-engineering-plugins/issues/new/choose)
+
 **Reusable engineering workflows with traceable evidence, explicit limits and a community update path.** Maintained by [ilanvkn](https://github.com/ilanvkn). Original code and documentation are MIT licensed; attributed third-party references retain their licenses.
 
 | Plugin | Public version | Useful for |
 | --- | --- | --- |
 | [Reverse Lab](plugins/reverse-lab) | 3.3.2 | Artifact/claim identity, resumable investigations, evidence gates, reviewed replay and owned-job records |
 | [Apple Blueprint](plugins/apple) | 2.0.0-alpha.4 | Swift/native platform development, focused design references and three read-only local MCP helpers |
-| [Thesis Pro](plugins/thesis-pro) | 0.2.0-alpha.1 | Local academic projects, evidence links, drafts and structural audits |
+| [Thesis Pro](plugins/thesis-pro) | 0.2.0 | Local academic projects, evidence links, drafts and structural audits |
 | [Blender Asset Lab](plugins/blender) | 0.1.0-alpha.1 | Original asset workflows and executable Blender scene auditing |
 | [AV3X Antartica / Android](https://github.com/ilanvkn/av3x-antartica) | Separate repository | SDK-native Android development and a versioned evidence atlas |
 | [REA](https://github.com/morluto/rea) | Independent upstream | Actual artifact-analysis CLI/MCP engine; not our original code and not bundled here |
@@ -23,7 +28,7 @@ codex plugin add thesis-pro@engineering-plugins --json
 codex plugin add blender@engineering-plugins --json
 ```
 
-Refresh the chat and invoke `$reverse-lab` or `$apple`. Each plugin can be installed independently. Existing local marketplace installations may already provide these skill names: choose one installation source deliberately rather than enabling duplicate copies.
+Refresh the chat and invoke `$reverse-lab`, `$apple`, `$thesis-pro` or `$blender-3d-asset-generation`. Each plugin can be installed independently. Existing local marketplace installations may already provide these skill names: choose one installation source deliberately rather than enabling duplicate copies.
 
 The repository includes `.agents/plugins/marketplace.json` and the supported compatibility plugin manifests. Official marketplace/package guidance: [OpenAI plugin documentation](https://developers.openai.com/plugins/build/plugins). GitHub distribution is not an official directory review or platform endorsement.
 

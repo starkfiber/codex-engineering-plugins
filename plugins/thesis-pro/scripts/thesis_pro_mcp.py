@@ -69,16 +69,16 @@ def words(text):
 
 
 def chapter_template(target, degree):
-    ratios = [0.10, 0.27, 0.18, 0.20, 0.20, 0.05]
+    ratios = [0.10, 0.30, 0.20, 0.20, 0.20, 0.0]
     names = [
         "Introduction", "Literature Review", "Methodology",
         "Results / Findings", "Discussion, Recommendations and Conclusion",
         "References and Appendices"
     ]
     if degree.lower().startswith("master"):
-        ratios = [0.12, 0.25, 0.20, 0.20, 0.18, 0.05]
+        ratios = [0.12, 0.28, 0.22, 0.20, 0.18, 0.0]
     budgets = [round(target * ratio) for ratio in ratios]
-    budgets[-1] += target - sum(budgets)
+    budgets[-2] += target - sum(budgets)
     return [{"number": i + 1, "title": n, "target_words": budgets[i], "sections": {}}
             for i, n in enumerate(names)]
 
@@ -115,17 +115,23 @@ def tool_list(_a):
 
 def tool_dashboard(a):
     p = load_project(a["project_id"])
-    chapter_rows, total = [], 0
+    chapter_rows, total, reference_words = [], 0, 0
     for ch in p["chapters"]:
         actual = sum(words(v.get("content", "")) for v in ch.get("sections", {}).values())
-        total += actual
+        if ch["number"] == 6:
+            reference_words += actual
+        else:
+            total += actual
         chapter_rows.append({"chapter": ch["number"], "title": ch["title"],
                              "words": actual, "target_words": ch["target_words"],
                              "sections": list(ch.get("sections", {}).keys())})
     unsupported = [c for c in p["claims"] if not c.get("source_ids")]
     return {"id": p["id"], "title": p["title"], "degree": p["degree"],
             "discipline": p["discipline"], "status": p["status"],
-            "words": total, "target_words": p["target_words"], "chapters": chapter_rows,
+            "words": total, "reference_words": reference_words, "total_section_words": total + reference_words,
+            "word_count_method": "regex section words; chapter6 references/appendices excluded from main text",
+            "target_words": p["target_words"], "chapters": chapter_rows,
+            "budget_note": "Existing budgets are preserved; review if main-text targets differ" if sum(c["target_words"] for c in p["chapters"] if c["number"] != 6) != p["target_words"] else None,
             "source_count": len(p["sources"]), "claim_count": len(p["claims"]),
             "unsupported_claims": len(unsupported), "research_design": p["research_design"],
             "next_action": next_action(p, total)}
@@ -208,6 +214,45 @@ def tool_add_claim(a):
             else "This external claim has no supporting source."}
 
 
+def tool_update_source(a):
+    p = load_project(a["project_id"])
+    source = next((s for s in p["sources"] if s["id"] == a["source_id"]), None)
+    if source is None:
+        raise ValueError("Source not found")
+    changes = {k: v for k, v in a.items() if k in ("citation", "url_or_doi", "type", "verified", "notes")}
+    if not changes:
+        raise ValueError("Supply source changes")
+    if any(k in changes and changes[k] != source.get(k) for k in ("citation", "url_or_doi")):
+        changes.setdefault("verified", False)
+    if changes.get("verified") and not (changes.get("notes") or source.get("notes", "")).strip():
+        raise ValueError("Record how the source was checked in notes")
+    previous = {k: source.get(k) for k in changes}
+    source.update(changes)
+    source["updated_at"] = now()
+    source.setdefault("history", []).append({"at": now(), "previous": previous})
+    save_project(p)
+    return {"message": "Source updated; verification remains a recorded assertion", "source": source}
+
+
+def tool_update_claim(a):
+    p = load_project(a["project_id"])
+    claim = next((c for c in p["claims"] if c["id"] == a["claim_id"]), None)
+    if claim is None:
+        raise ValueError("Claim not found")
+    changes = {k: v for k, v in a.items() if k in ("text", "source_ids", "location", "kind")}
+    if not changes:
+        raise ValueError("Supply claim changes")
+    known = {s["id"] for s in p["sources"]}
+    if any(s not in known for s in changes.get("source_ids", [])):
+        raise ValueError("Unknown source IDs")
+    previous = {k: claim.get(k) for k in changes}
+    claim.update(changes)
+    claim["updated_at"] = now()
+    claim.setdefault("history", []).append({"at": now(), "previous": previous})
+    save_project(p)
+    return {"message": "Claim updated", "claim": claim}
+
+
 def tool_audit(a):
     p = load_project(a["project_id"])
     d = p["research_design"]
@@ -223,7 +268,9 @@ def tool_audit(a):
         issues.append({"severity": "high", "area": "evidence", "message": f"{len(unsupported)} external claim(s) lack sources.", "ids": unsupported})
     if not p["sources"]:
         issues.append({"severity": "high", "area": "literature", "message": "No scholarly sources are recorded."})
-    return {"project_id": p["id"], "passed": not issues, "issues": issues,
+    return {"project_id": p["id"], "passed": not issues, "scope": "structure_and_recorded_flags_only", "issues": issues,
+            "main_text_words": tool_dashboard(a)["words"],
+            "word_budget_met": tool_dashboard(a)["words"] >= p["target_words"],
             "note": "This structural audit supports, but does not replace, expert academic review."}
 
 
@@ -239,14 +286,24 @@ def tool_export(a):
         out = out.with_suffix(".md")
     lines = [f"# {p['title']}", "", f"**Degree:** {p['degree']}", f"**Language:** {p['language']}", ""]
     for ch in p["chapters"]:
+        if not ch.get("sections"):
+            continue
         lines += [f"# Chapter {ch['number']}: {ch['title']}", ""]
         for title, sec in ch.get("sections", {}).items():
             lines += [f"## {title}", "", sec.get("content", ""), ""]
+    if p["sources"]:
+        lines += ["# Recorded source ledger", "", "Recorded citations and verification flags; not an automatically formatted bibliography.", ""]
+        for source in p["sources"]:
+            state = "marked verified" if source.get("verified") else "unverified"
+            lines += [f"- {source['id']}: {source['citation']} ({state})", source.get("url_or_doi", ""), ""]
     atomic_write(out, "\n".join(lines))
-    return {"message": "Markdown manuscript exported", "path": str(out), "word_count": words("\n".join(lines))}
+    counts = tool_dashboard({"project_id": p["id"]})
+    return {"message": "Markdown manuscript exported", "path": str(out), "word_count": words("\n".join(lines)), "main_text_words": counts["words"], "reference_words": counts["reference_words"], "total_section_words": counts["total_section_words"]}
 
 
 TOOLS = {
+    "update_source": (tool_update_source, {"title": "Correct and verify a source", "description": "Update an existing source with a checked citation, recorded verification notes and retained history. Changed citation/URL invalidates the prior verification flag unless explicitly reverified.", "inputSchema": {"type": "object", "properties": {"project_id": {"type": "string"}, "source_id": {"type": "string"}, "citation": {"type": "string"}, "url_or_doi": {"type": "string"}, "type": {"type": "string"}, "verified": {"type": "boolean"}, "notes": {"type": "string"}}, "required": ["project_id", "source_id"]}}),
+    "update_claim": (tool_update_claim, {"title": "Correct a claim and its evidence links", "description": "Update an existing claim, validate source IDs and retain previous values.", "inputSchema": {"type": "object", "properties": {"project_id": {"type": "string"}, "claim_id": {"type": "string"}, "text": {"type": "string"}, "source_ids": {"type": "array", "items": {"type": "string"}}, "location": {"type": "string"}, "kind": {"type": "string", "enum": ["external", "interpretation", "original contribution"]}}, "required": ["project_id", "claim_id"]}}),
     "create_project": (tool_create, {"title": "Create thesis project", "description": "Start a Master's or PhD thesis from a title; no imported file is required.", "inputSchema": {"type": "object", "properties": {"title": {"type": "string"}, "degree": {"type": "string", "enum": ["PhD", "Master's"]}, "discipline": {"type": "string"}, "target_words": {"type": "integer", "minimum": 5000}, "language": {"type": "string"}, "citation_style": {"type": "string"}}, "required": ["title"]}}),
     "list_projects": (tool_list, {"title": "List thesis projects", "description": "List locally stored ThesisPRO projects.", "inputSchema": {"type": "object", "properties": {}}}),
     "get_dashboard": (tool_dashboard, {"title": "Show thesis dashboard", "description": "Show topic, progress, structure, evidence status, and the clearest next action.", "inputSchema": {"type": "object", "properties": {"project_id": {"type": "string"}}, "required": ["project_id"]}}),
@@ -268,7 +325,7 @@ def handle(request):
     method = request.get("method")
     if method == "initialize":
         return {"protocolVersion": request.get("params", {}).get("protocolVersion", "2025-06-18"),
-                "capabilities": {"tools": {}}, "serverInfo": {"name": "thesis-pro", "version": "0.2.0-alpha.1"}}
+                "capabilities": {"tools": {}}, "serverInfo": {"name": "thesis-pro", "version": "0.2.0"}}
     if method == "notifications/initialized":
         return None
     if method == "ping":

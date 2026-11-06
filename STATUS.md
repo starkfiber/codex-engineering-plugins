@@ -25,3 +25,7 @@ Binary property-list inspection uses the macOS plutil utility; that one test is 
 ## Additional community packages (2026-11-06)
 
 Thesis Pro0.2.0-alpha.1 adds a portable stdlib Python MCP notebook, seven synthetic tests and a proposal-only example. Publication review corrected export path traversal, project identity/symlink handling and atomic project writes. The configured Python worker passed all seven reviewed tests with verified cleanup and released lease; this is code-test evidence, not academic review. Blender Asset Lab0.1.0-alpha.1 packages the original asset skill and audit helper. Actual Blender5.2.1LTS smoke accepts a valid cube and rejects triangle-budget/unapplied-scale failures. Blender is not bundled; the default CI does not establish Blender or engine-runtime behavior. Existing local personal installations are not automatically migrated.
+
+## Thesis Pro0.2.0 workflow qualification
+
+The actual packaged launcher completed a disposable study through initial audit failures, source/claim corrections, draft readback, bounded export rejection, manuscript export and restart persistence. Ten Python regressions pass. The public worked proposal has124main-text and29reference words; its structural audit passes while word_budget_met remains false. Server/Python tests use synthetic workspaces. The host model and independent scholarship are separate from this protocol-client evidence. See plugins/thesis-pro/docs/WALKTHROUGH.md.

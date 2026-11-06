@@ -82,9 +82,51 @@ class ThesisTests(unittest.TestCase):
         env = dict(os.environ, THESIS_PRO_HOME=str(Path(self.temp.name) / "empty"))
         run = subprocess.run([sys.executable, str(SERVER)], input="\n".join(map(json.dumps, requests)) + "\n", text=True, capture_output=True, env=env, timeout=10, check=True)
         replies = [json.loads(line) for line in run.stdout.splitlines()]
-        self.assertEqual(replies[0]["result"]["serverInfo"]["version"], "0.2.0-alpha.1")
-        self.assertEqual(len(replies[1]["result"]["tools"]), 10)
+        self.assertEqual(replies[0]["result"]["serverInfo"]["version"], "0.2.0")
+        self.assertEqual(len(replies[1]["result"]["tools"]), 12)
         self.assertEqual(replies[2]["result"]["structuredContent"]["projects"], [])
+
+    def test_source_and_claim_corrections_resolve_audit(self):
+        thesis.tool_design({"project_id": self.pid, "fields": {k: "Synthetic provisional plan" for k in ("problem", "gap", "aim", "objectives", "questions", "methodology", "expected_contribution")}})
+        source = thesis.tool_add_source({"project_id": self.pid, "citation": "Synthetic fixture", "verified": False})["source"]
+        claim = thesis.tool_add_claim({"project_id": self.pid, "claim": "Illustrative external claim"})["claim"]
+        self.assertFalse(thesis.tool_audit({"project_id": self.pid})["passed"])
+        with self.assertRaises(ValueError):
+            thesis.tool_update_source({"project_id": self.pid, "source_id": source["id"], "verified": True})
+        thesis.tool_update_source({"project_id": self.pid, "source_id": source["id"], "verified": True, "notes": "Synthetic verification-record fixture, not a real paper"})
+        thesis.tool_update_claim({"project_id": self.pid, "claim_id": claim["id"], "source_ids": [source["id"]]})
+        audit = thesis.tool_audit({"project_id": self.pid})
+        self.assertTrue(audit["passed"])
+        self.assertFalse(audit["word_budget_met"])
+        self.assertEqual(audit["scope"], "structure_and_recorded_flags_only")
+        self.assertEqual(thesis.load_project(self.pid)["claims"][0]["history"][0]["previous"]["source_ids"], [])
+
+    def test_changed_citation_invalidates_verification_and_unknown_links_reject(self):
+        source = thesis.tool_add_source({"project_id": self.pid, "citation": "Synthetic fixture", "verified": True})["source"]
+        updated = thesis.tool_update_source({"project_id": self.pid, "source_id": source["id"], "url_or_doi": "https://example.org/changed"})["source"]
+        self.assertFalse(updated["verified"])
+        self.assertEqual(updated["history"][0]["previous"]["verified"], True)
+        claim = thesis.tool_add_claim({"project_id": self.pid, "claim": "Fixture"})["claim"]
+        with self.assertRaises(ValueError):
+            thesis.tool_update_claim({"project_id": self.pid, "claim_id": claim["id"], "source_ids": ["unknown"]})
+        self.assertEqual(thesis.load_project(self.pid)["claims"][0]["source_ids"], [])
+
+    def test_reference_counts_and_legacy_reads_preserve_stored_bytes(self):
+        thesis.tool_save_section({"project_id": self.pid, "chapter": 1, "section_title": "Plan", "content": "Main text only"})
+        thesis.tool_save_section({"project_id": self.pid, "chapter": 6, "section_title": "References", "content": "One recorded citation"})
+        current = thesis.load_project(self.pid)
+        for chapter in current["chapters"]:
+            chapter["target_words"] = 500
+        thesis.save_project(current)
+        path = thesis.project_path(self.pid)
+        before = path.read_bytes()
+        dashboard = thesis.tool_dashboard({"project_id": self.pid})
+        self.assertEqual((dashboard["words"], dashboard["reference_words"], dashboard["total_section_words"]), (3, 3, 6))
+        self.assertIsNotNone(dashboard["budget_note"])
+        self.assertEqual(path.read_bytes(), before)
+        exported = thesis.tool_export({"project_id": self.pid})
+        self.assertEqual(exported["main_text_words"], 3)
+        self.assertNotIn("Chapter 2:", Path(exported["path"]).read_text())
 
 
 if __name__ == "__main__":
