@@ -1,6 +1,6 @@
 # Public qualification and gaps
 
-Reverse Lab3.3.2 and Apple Blueprint2.0.0-alpha.3 are first public source packages from previously local plugins. Versioned source, manifests and community CI are new public proof; prior private case outcomes remain historical.
+Reverse Lab3.3.2 and Apple Blueprint2.0.0-alpha.4 are first public source packages from previously local plugins. Versioned source, manifests and community CI are new public proof; prior private case outcomes remain historical.
 
 Reverse Lab community checks cover case creation/verification, malformed and stale records, supported coverage schemas, dependency invalidation, job reservation/failure/owned-child cleanup and hash-reviewed replay. Coverage fixtures are explicitly synthetic; no private Etcher artifact or full original-application analysis is shipped. Runtime gates cannot pass from static records. POSIX cleanup is the qualified execution family; Windows is not.
 
@@ -14,6 +14,10 @@ Next: independently reproduce core workflows, improve current-schema coverage ad
 
 The public Node suite passes: four Reverse Lab helper groups,25Apple tests, fresh-process case/tamper rejection and Apple stdio discovery, plus both reviewed payload manifests. The real optional bridge initialized the independently installed REA6.8.0 engine, listed229tools and the owned process exited0. That is server/probe evidence only.
 
-On Apple M5 / Swift6.3.3, the synthetic macOS package builds and BehaviorCheck passes61checks. A separate `swift test` attempt fails because the selected command-line toolchain does not provide the Testing module. That suite is not marked passed; no UI or hardware acceptance is implied. Raw local logs remain outside the public payload.
+On Apple M5 / Swift6.3.3, the synthetic macOS package builds and BehaviorCheck passes61checks. The original Swift Testing failure was a framework/runtime search-path problem in the selected Command Line Tools, not an absent installation. The alpha.4 helper locates that selected toolchain's built-in Testing.framework and interop runtime without changing global toolchain settings or downloading a package. Both Swift Testing tests pass. A framework-only first attempt compiled but failed at runtime; both paths are required.
+
+The corrected native sample was launched in an isolated review app. macOS receipt navigation, keyboard search/empty/recovery states, sidebar arrow navigation, labelled settings, Light/Dark rendering and app Reduce Motion were exercised. Accessibility inspection found missing heading semantics; the sample now exposes headings and combined label/value fields. This is bounded macOS UI evidence, not a VoiceOver pass. Persistent VoiceOver feedback was not obtained through the first-run flow; the original off state was restored. Raw local logs/screenshots remain outside the public payload.
+
+The user retained the full V3 contract. Apple remains alpha: six platform interaction suites, live runtime integration, independent evaluation, complete accessibility/performance, recovery, clean-host and upgrade/rollback acceptance are still required. See [the current gate ledger](plugins/apple/docs/V3-QUALIFICATION.md) and [the full contract](plugins/apple/docs/V3-EXIT-CONTRACT.md).
 
 Binary property-list inspection uses the macOS plutil utility; that one test is explicitly skipped on Linux. Routing/hash/other portable helper checks still run there. The default archive tests require zip/unzip installed on the CI host.

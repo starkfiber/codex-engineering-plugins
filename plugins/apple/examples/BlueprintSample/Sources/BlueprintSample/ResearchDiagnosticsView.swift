@@ -136,7 +136,7 @@ public struct ResearchDiagnosticsView: View {
                         .accessibilityHidden(true)
                     VStack(alignment: .leading, spacing: 5) {
                         Text(record.displayStage.uppercased()).font(.caption.weight(.semibold)).foregroundStyle(.secondary)
-                        Text(record.title).font(.title2.weight(.semibold)).textSelection(.enabled)
+                        Text(record.title).font(.title2.weight(.semibold)).textSelection(.enabled).accessibilityAddTraits(.isHeader)
                     }
                 }
                 Text(record.summary).font(.body).foregroundStyle(.secondary).textSelection(.enabled)
@@ -152,17 +152,17 @@ public struct ResearchDiagnosticsView: View {
                 }
                 Divider()
                 VStack(alignment: .leading, spacing: 15) {
-                    Text("Decision & evidence").font(.headline)
+                    Text("Decision & evidence").font(.headline).accessibilityAddTraits(.isHeader)
                     ForEach(Array(record.fields.enumerated()), id: \.offset) { _, field in
                         HStack(alignment: .top, spacing: 18) {
                             Text(field.label).foregroundStyle(.secondary).frame(width: 140, alignment: .leading)
                             Text(field.value).frame(maxWidth: .infinity, alignment: .leading).textSelection(.enabled)
-                        }.font(.callout)
+                        }.font(.callout).accessibilityElement(children: .combine)
                     }
                 }
                 Divider()
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("Provenance").font(.headline)
+                    Text("Provenance").font(.headline).accessibilityAddTraits(.isHeader)
                     Text(record.source).font(.callout).textSelection(.enabled)
                     Text(record.snapshot).font(.caption).foregroundStyle(.secondary)
                     Text("Producer: \(record.producer)").font(.caption).foregroundStyle(.secondary)

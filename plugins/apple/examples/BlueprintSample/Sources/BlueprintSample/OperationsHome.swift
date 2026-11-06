@@ -15,7 +15,7 @@ public struct OperationsHome: View {
             VStack(alignment: .leading, spacing: 26) {
                 VStack(alignment: .leading, spacing: 8) {
                     Text("OPERATIONS OVERVIEW").font(.caption.weight(.semibold)).foregroundStyle(.secondary)
-                    Text("Decisions, with evidence.").font(.largeTitle.weight(.semibold))
+                    Text("Decisions, with evidence.").font(.largeTitle.weight(.semibold)).accessibilityAddTraits(.isHeader)
                     Text("Triage uncertainty. Inspect outcomes. Keep research in reach.").foregroundStyle(.secondary)
                 }
                 ZStack(alignment: .leading) {
@@ -63,7 +63,7 @@ public struct OperationsHome: View {
     }
     private var attentionSection: some View {
                 VStack(alignment: .leading, spacing: 14) {
-                    Text("Needs attention").font(.title3.weight(.semibold))
+                    Text("Needs attention").font(.title3.weight(.semibold)).accessibilityAddTraits(.isHeader)
                     ForEach(attention) { item in
                         Button { open(item) } label: {
                             HStack(alignment: .top, spacing: 12) {
@@ -82,7 +82,7 @@ public struct OperationsHome: View {
     }
     private var researchSection: some View {
                 VStack(alignment: .leading, spacing: 12) {
-                    Text("Research alongside").font(.title3.weight(.semibold))
+                    Text("Research alongside").font(.title3.weight(.semibold)).accessibilityAddTraits(.isHeader)
                     if let research = ResearchFixtures.records.first(where: { $0.surface == "Research" }) {
                         Button { open(research) } label: {
                             Label(research.title, systemImage: "books.vertical")

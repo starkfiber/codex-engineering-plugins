@@ -1,6 +1,6 @@
 {
   "name": "apple",
-  "version": "2.0.0-alpha.3",
+  "version": "2.0.0-alpha.4",
   "files": [
     {
       "path": ".codex-plugin/mcp.json",
@@ -8,7 +8,7 @@
     },
     {
       "path": ".codex-plugin/plugin.json",
-      "sha256": "e215416ce4931caf0d3840fd6f7db372d68ce12a12477e77948b313ed0bba2d9"
+      "sha256": "5e3d3be2f680686a89471aaa68101c894ff6dd337f55ba5da83e1d3ca22cee9c"
     },
     {
       "path": "LICENSE",
@@ -16,7 +16,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "b32123bccb3eb26c44f56aedf31ff0a25b20fb69d580359565e50e0359fa4245"
+      "sha256": "8c42ab31d6239c4704279a4f8c087a5bd98e308b5a8ecc2b6cd47f3f749c58d2"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -24,7 +24,15 @@
     },
     {
       "path": "docs/STATUS.md",
-      "sha256": "6ae9598186eb4e76147cba52f0441e07509e2ef827791f36d16266c125c32d2d"
+      "sha256": "520521a8cdc0e20fd5429a77fab45e920578677dd39d0061f32bd2729ef613a6"
+    },
+    {
+      "path": "docs/V3-EXIT-CONTRACT.md",
+      "sha256": "248c16dc487b8216b0acfb967077a16e50da8d374625ca394bb7c803cffc8252"
+    },
+    {
+      "path": "docs/V3-QUALIFICATION.md",
+      "sha256": "041a634c5a16c5d66273713d9580806052f8dd9ba6c51248c98360068ff4c371"
     },
     {
       "path": "examples/BlueprintSample/Info.plist",
@@ -56,7 +64,7 @@
     },
     {
       "path": "examples/BlueprintSample/Sources/BlueprintSample/OperationsHome.swift",
-      "sha256": "f175910b32f505d09c114980c729c83e879311cbfe31de250c9558ed94f1927a"
+      "sha256": "c9ec7dcad8a4e15fda93af5983d2df3a24ac6ed382279e261dc5521164d8a6f7"
     },
     {
       "path": "examples/BlueprintSample/Sources/BlueprintSample/ResearchContracts.swift",
@@ -64,7 +72,7 @@
     },
     {
       "path": "examples/BlueprintSample/Sources/BlueprintSample/ResearchDiagnosticsView.swift",
-      "sha256": "e263abf539028790d8ff5c711aacb101001d8942e385eee0e19fa6d1a2a7b967"
+      "sha256": "cd049264b11b3b93d00e37ab23b302941c822d9a3e025ec60352a4e4596a7622"
     },
     {
       "path": "examples/BlueprintSample/Sources/BlueprintSample/Transfer.swift",
@@ -109,6 +117,10 @@
     {
       "path": "scripts/release-gates.mjs",
       "sha256": "09a0b7dd69c68572762a25617e4e167aa0a46737c4100b3f5d03d7f17a9f8128"
+    },
+    {
+      "path": "scripts/test-swift.mjs",
+      "sha256": "8bb4102648be3fb9025df6db40edd8f0de912f3c6fe91f8077bdc2a6d1d9a928"
     },
     {
       "path": "scripts/verify-platforms.mjs",
@@ -364,11 +376,11 @@
     },
     {
       "path": "skills/apple/references/verification.md",
-      "sha256": "22da30d4f0bfc46de44169d91deba937e1af6557ee8c9ad73901602b37fd8bf0"
+      "sha256": "a6ec9378b34d20e7b77a1244ddc53dd506cd8ff82dae101b79f7530abc993426"
     },
     {
       "path": "skills/apple/registry.json",
-      "sha256": "eee696db14520b8749aab55b47c947633cc07813cb7161cae2e8ae32e67b6f90"
+      "sha256": "087a6136b1781d7943bbfd9cbc2a149c92690490daabf9ceb9a288a0e22c3745"
     },
     {
       "path": "skills/apple/scripts/apple.mjs",

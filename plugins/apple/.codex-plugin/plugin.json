@@ -1,6 +1,6 @@
 {
   "name": "apple",
-  "version": "2.0.0-alpha.3",
+  "version": "2.0.0-alpha.4",
   "requires_local_executor": true,
   "description": "Apple platform engineering blueprint: Swift, native design, platform adapters, verification and firmware research.",
   "skills": "./skills",

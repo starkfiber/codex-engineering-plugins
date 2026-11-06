@@ -5,7 +5,7 @@
 | Plugin | Public version | Useful for |
 | --- | --- | --- |
 | [Reverse Lab](plugins/reverse-lab) | 3.3.2 | Artifact/claim identity, resumable investigations, evidence gates, reviewed replay and owned-job records |
-| [Apple Blueprint](plugins/apple) | 2.0.0-alpha.3 | Swift/native platform development, focused design references and three read-only local MCP helpers |
+| [Apple Blueprint](plugins/apple) | 2.0.0-alpha.4 | Swift/native platform development, focused design references and three read-only local MCP helpers |
 | [AV3X Antartica / Android](https://github.com/ilanvkn/av3x-antartica) | Separate repository | SDK-native Android development and a versioned evidence atlas |
 | [REA](https://github.com/morluto/rea) | Independent upstream | Actual artifact-analysis CLI/MCP engine; not our original code and not bundled here |
 

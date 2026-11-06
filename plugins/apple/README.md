@@ -1,4 +1,4 @@
-# Apple Blueprint · 2.0.0-alpha.3
+# Apple Blueprint · 2.0.0-alpha.4
 
 A Swift/native Apple development workflow with focused references and three local read-only MCP tools. Invoke `$apple` after installation and refresh the chat. It routes macOS, iOS, iPadOS, watchOS, tvOS, visionOS, extensions and firmware questions to relevant guidance; it is not Apple OS source or an exhaustive offline SDK.
 
@@ -20,4 +20,13 @@ The marketplace registers the portable launch script. Standalone clients may con
 
 Selected upstream MIT specialist references remain intact, with exact revisions and full licenses in skills/apple/registry.json and THIRD_PARTY_NOTICES.md. Other linked tools are references, not bundled installers. The included macOS Swift sample uses synthetic fixtures and a generic example-client contract; it does not connect to a real phone or private operating-system service.
 
-This is a **public alpha**. Current community tests establish helper behavior and relocation; they do not inherit the old private source's build evidence or certify every platform. Firmware preflight deliberately does not establish restore/signing eligibility. See docs/STATUS.md and the repository's shared contribution/security guidance.
+Run the real sample tests from the repository root:
+
+```sh
+node plugins/apple/scripts/test-swift.mjs
+swift run --package-path plugins/apple/examples/BlueprintSample BehaviorCheck
+```
+
+On a Mac using Command Line Tools, the helper supplies the selected toolchain's built-in Swift Testing framework and runtime search paths. It installs nothing and changes no global developer selection. Full Xcode uses its normal Swift Testing integration. See the upstream [Swift Testing distributions guide](https://github.com/swiftlang/swift-testing/blob/main/Documentation/Distributions.md).
+
+This is a **public alpha**. Current helper/compiler checks and bounded macOS UI results do not certify every platform. Firmware preflight deliberately does not establish restore/signing eligibility. The [full V3 contract](docs/V3-EXIT-CONTRACT.md) is retained; [qualification](docs/V3-QUALIFICATION.md) identifies the open gates. See docs/STATUS.md and the repository's shared contribution/security guidance.
