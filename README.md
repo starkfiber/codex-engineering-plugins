@@ -2,10 +2,10 @@
 
 ![Build, investigate and verify with reusable engineering workflows](assets/engineering.svg)
 
-[![Package checks](https://github.com/ilanvkn/codex-engineering-plugins/actions/workflows/check.yml/badge.svg?branch=main)](https://github.com/ilanvkn/codex-engineering-plugins/actions/workflows/check.yml)
-[MIT license](LICENSE) · [Install](#install) · [Contribute](CONTRIBUTING.md) · [Report a bug](https://github.com/ilanvkn/codex-engineering-plugins/issues/new/choose)
+[![Package checks](https://github.com/starkfiber/codex-engineering-plugins/actions/workflows/check.yml/badge.svg?branch=main)](https://github.com/starkfiber/codex-engineering-plugins/actions/workflows/check.yml)
+[MIT license](LICENSE) · [Install](#install) · [Contribute](CONTRIBUTING.md) · [Report a bug](https://github.com/starkfiber/codex-engineering-plugins/issues/new/choose)
 
-**Reusable engineering workflows with traceable evidence, explicit limits and a community update path.** Maintained by [ilanvkn](https://github.com/ilanvkn). Original code and documentation are MIT licensed; attributed third-party references retain their licenses.
+**Reusable engineering workflows with traceable evidence, explicit limits and a community update path.** Maintained by [Stark Fiber Enterprise](https://github.com/starkfiber). Original code and documentation are MIT licensed; attributed third-party references retain their licenses.
 
 | Plugin | Public version | Useful for |
 | --- | --- | --- |
@@ -13,7 +13,7 @@
 | [Apple Blueprint](plugins/apple) | 2.0.0-alpha.4 | Swift/native platform development, focused design references and three read-only local MCP helpers |
 | [Thesis Pro](plugins/thesis-pro) | 0.2.0 | Local academic projects, evidence links, drafts and structural audits |
 | [Blender Asset Lab](plugins/blender) | 0.1.0-alpha.1 | Original asset workflows and executable Blender scene auditing |
-| [AV3X Antartica / Android](https://github.com/ilanvkn/av3x-antartica) | Separate repository | SDK-native Android development and a versioned evidence atlas |
+| [AV3X Antartica / Android](https://github.com/starkfiber/av3x-antartica) | Separate repository | SDK-native Android development and a versioned evidence atlas |
 | [REA](https://github.com/morluto/rea) | Independent upstream | Actual artifact-analysis CLI/MCP engine; not our original code and not bundled here |
 
 ## Install
@@ -60,6 +60,6 @@ From repository root, run `node scripts/check.mjs` (Node22+ and Python3.10+). Th
 
 Open an Issue for a bug, evidence correction or useful enhancement. [CONTRIBUTING.md](CONTRIBUTING.md) explains reviewed findings and pull requests; [SECURITY.md](SECURITY.md) covers disclosure boundaries. CI runs the public suite on Linux/macOS with Node22/24. Dependency updates become reviewable proposals rather than automatic merges. Plugins have independent versions and reviewed payload manifests.
 
-Separate application projects: [KSlides](https://github.com/ilanvkn/kslides), a native lesson studio with local MCP, and [Maze Malaysia Way](https://github.com/ilanvkn/maze-malaysia-way), an offline-first Android map development snapshot. Their app builds, data licenses and acceptance limits are maintained in those repositories.
+Separate application projects: [KSlides](https://github.com/ilanvkn/kslides), a native lesson studio with local MCP, and [Maze Malaysia Way](https://github.com/starkfiber/maze-malaysia-way), an offline-first Android map development snapshot. Their app builds, data licenses and acceptance limits are maintained in those repositories.
 
 Private research cases, raw build/runtime logs, credentials, proprietary manuals, firmware, upstream engine dependencies and machine-specific registrations are excluded. Historical `case://` locators refer to unbundled records, not public downloads. Original SDK/toolchain/hardware results are not automatically rerun by a public package test.
