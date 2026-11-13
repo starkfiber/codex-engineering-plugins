@@ -23,6 +23,14 @@ Read [engineering.md](references/engineering.md) for app implementation, debuggi
 
 | Need | Read next |
 | --- | --- |
+| Smooth motion, subtle effects, GPU attribution or latest-frame mailbox | [smooth-motion-audit.md](references/smooth-motion-audit.md) |
+| Sustained performance, capture backpressure, thermal protocol or releasing a test phone | [performance-qualification.md](references/performance-qualification.md) |
+| Native FPS, GPU, Core Animation, frame pacing or Android smoothness comparison | [rendering-performance.md](references/rendering-performance.md) |
+| My iPhone controller, launcher, task switcher or remote preview performance | [iphone-controller-lessons.md](references/iphone-controller-lessons.md) |
+| Physical iPhone, WDA, device control or heat | [physical-iphone.md](references/physical-iphone.md) |
+| FPX, gateway, browser return or duplicate payment credits | [payment-returns.md](references/payment-returns.md) |
+| Native screenshots, frame timing or thermal measurements | [motion-device-evidence.md](references/motion-device-evidence.md) |
+| Reverse Lab, RF² or RUOS handoff | [cross-runtime-handoff.md](references/cross-runtime-handoff.md) |
 | Screen creation, refinement, HIG review, typography, tokens, accessibility | [design.md](references/design.md) |
 | Widget, Live Activity, Siri, App Intent, HealthKit, StoreKit, CloudKit, media, spatial feature | [frameworks.md](references/frameworks.md) |
 | Compile, run, simulator, tests, signing, packaging, release | [verification.md](references/verification.md) |

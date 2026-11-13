@@ -1,14 +1,11 @@
-# Public-alpha scope
+# Release status — 2.0.0-alpha.6
 
-2.0.0-alpha.4 packages the reviewed Apple workflow, three read-only local MCP helpers, selected MIT specialists, tests and a synthetic Swift example. Prior private review logs, raw upstream checkouts, machine paths and release-evidence records are excluded. Source-bound historical acceptance does not transfer automatically to this public copy.
+This is a public-alpha documentation and workflow release, not stable V3 certification.
 
-Routing, local inspection, SHA-256, firmware archive preflight, evidence/release gates and relocation are covered by the community Node suite. Runtime, accessibility, signing, App Review and physical-device checks remain separate. A macOS compile/test is a compiler/test outcome, not a visual acceptance result; other platform builds require their SDKs. Stable V3 acceptance remains unestablished.
+Included: local routing/inspection/hash helpers, focused native engineering references, selected licensed specialists, evidence gates and a synthetic Swift example. Alpha.6 adds physical-iPhone, payment-return and motion/performance guidance distilled from bounded local investigations.
 
-Vendor sources:
+The separate controller's latest-frame queue passed local burst, pause/resume and concurrency scenarios. Earlier device navigation and USB capture observations do not qualify its newly changed pipeline. Hardware heat, sustained frame-time percentiles, rotation, reconnect and accessibility remain pending. No phone is required or contacted by the package's default Node tests.
 
-- [tn/ios-interface-design](https://github.com/tn/ios-interface-design), pinned revision in registry: focused iPhone/iPad craft guidance, MIT.
-- [eworthing/agent-skills](https://github.com/eworthing/agent-skills), pinned revision in registry: selected tvOS focus and design-token guidance, MIT.
+Stable release still requires the complete [exit contract](V3-EXIT-CONTRACT.md): runtime adapters, platform interactions, clean-host installation, independent evaluation, accessibility/performance, recovery, and distribution/upgrade/rollback. Do not weaken these gates to rename an alpha as stable.
 
-Their specialist directories and LICENSE files are retained intact. They are loaded only when relevant; external instructions do not override user scope or authorize installation/execution. Apple framework availability must be checked against current Apple documentation and the selected SDK.
-
-Alpha.4 adds a tested Swift Testing launcher and native sample heading semantics. Bounded macOS UI checks are documented in [V3 qualification](V3-QUALIFICATION.md); the [full contract](V3-EXIT-CONTRACT.md) is retained. Real VoiceOver and the complete six-platform/runtime acceptance remain open.
+Public packaging excludes private evidence logs, raw screenshots, credentials and device identifiers. Generalized lessons are not a claim that the receiving project's app has been tested.

@@ -1,14 +1,128 @@
 [
- {"task":"Improve VoiceOver reading order in an iPhone form","required":["design.md","platforms.md"]},
- {"task":"Investigate a Swift actor isolation error","required":["engineering.md"]},
- {"task":"Make Apple TV focus return after dismissing a sheet","required":["platforms.md"]},
- {"task":"Add a WidgetKit complication to watchOS","required":["frameworks.md","platforms.md"]},
- {"task":"Review privacy and signing before release","required":["verification.md"]},
- {"task":"Audit iPad keyboard navigation accessibility","required":["design.md","platforms.md"]},
- {"task":"Inspect a firmware IPSW checksum","required":["firmware.md"]},
- {"task":"Compare upstream license changes","required":["sources.md"]},
- {"task":"Build a RealityKit volume for visionOS","required":["engineering.md","frameworks.md","platforms.md"]},
- {"task":"Fix URLSession download cancellation","required":["engineering.md"]},
- {"task":"Style a native macOS settings UI","required":["design.md","platforms.md"]},
- {"task":"Explain SwiftData migration failure","required":["engineering.md"]}
+  {
+    "task": "Improve VoiceOver reading order in an iPhone form",
+    "required": [
+      "design.md",
+      "platforms.md"
+    ]
+  },
+  {
+    "task": "Investigate a Swift actor isolation error",
+    "required": [
+      "engineering.md"
+    ]
+  },
+  {
+    "task": "Make Apple TV focus return after dismissing a sheet",
+    "required": [
+      "platforms.md"
+    ]
+  },
+  {
+    "task": "Add a WidgetKit complication to watchOS",
+    "required": [
+      "frameworks.md",
+      "platforms.md"
+    ]
+  },
+  {
+    "task": "Review privacy and signing before release",
+    "required": [
+      "verification.md"
+    ]
+  },
+  {
+    "task": "Audit iPad keyboard navigation accessibility",
+    "required": [
+      "design.md",
+      "platforms.md"
+    ]
+  },
+  {
+    "task": "Inspect a firmware IPSW checksum",
+    "required": [
+      "firmware.md"
+    ]
+  },
+  {
+    "task": "Compare upstream license changes",
+    "required": [
+      "sources.md"
+    ]
+  },
+  {
+    "task": "Build a RealityKit volume for visionOS",
+    "required": [
+      "engineering.md",
+      "frameworks.md",
+      "platforms.md"
+    ]
+  },
+  {
+    "task": "Fix URLSession download cancellation",
+    "required": [
+      "engineering.md"
+    ]
+  },
+  {
+    "task": "Style a native macOS settings UI",
+    "required": [
+      "design.md",
+      "platforms.md"
+    ]
+  },
+  {
+    "task": "Explain SwiftData migration failure",
+    "required": [
+      "engineering.md"
+    ]
+  },
+  {
+    "task": "iphone acceptance",
+    "required": [
+      "physical-iphone.md"
+    ]
+  },
+  {
+    "task": "fpx acceptance",
+    "required": [
+      "payment-returns.md"
+    ]
+  },
+  {
+    "task": "animation acceptance",
+    "required": [
+      "motion-device-evidence.md"
+    ]
+  },
+  {
+    "task": "rf2 acceptance",
+    "required": [
+      "cross-runtime-handoff.md"
+    ]
+  },
+  {
+    "task": "My iPhone remote preview app switcher performance",
+    "required": [
+      "iphone-controller-lessons.md"
+    ]
+  },
+  {
+    "task": "native performance fps gpu frame pacing",
+    "required": [
+      "rendering-performance.md"
+    ]
+  },
+  {
+    "task": "sustained performance backpressure thermal protocol release phone",
+    "required": [
+      "performance-qualification.md"
+    ]
+  },
+  {
+    "task": "smooth motion gpu acceleration latest frame mailbox",
+    "required": [
+      "smooth-motion-audit.md"
+    ]
+  }
 ]

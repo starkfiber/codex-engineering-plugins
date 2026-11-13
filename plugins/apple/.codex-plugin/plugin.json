@@ -1,6 +1,6 @@
 {
   "name": "apple",
-  "version": "2.0.0-alpha.4",
+  "version": "2.0.0-alpha.6",
   "requires_local_executor": true,
   "description": "Apple platform engineering blueprint: Swift, native design, platform adapters, verification and firmware research.",
   "skills": "./skills",
@@ -14,8 +14,8 @@
     ]
   },
   "author": {
-    "name": "ilanvkn",
-    "url": "https://github.com/ilanvkn"
+    "name": "Stark Fiber Enterprise",
+    "url": "https://github.com/starkfiber"
   },
-  "repository": "https://github.com/ilanvkn/codex-engineering-plugins"
+  "repository": "https://github.com/starkfiber/codex-engineering-plugins"
 }

@@ -10,7 +10,7 @@
 | Plugin | Public version | Useful for |
 | --- | --- | --- |
 | [Reverse Lab](plugins/reverse-lab) | 3.3.2 | Artifact/claim identity, resumable investigations, evidence gates, reviewed replay and owned-job records |
-| [Apple Blueprint](plugins/apple) | 2.0.0-alpha.4 | Swift/native platform development, focused design references and three read-only local MCP helpers |
+| [Apple Blueprint](plugins/apple) | 2.0.0-alpha.6 | Swift/native platform development, focused design references and three read-only local MCP helpers |
 | [Thesis Pro](plugins/thesis-pro) | 0.2.0 | Local academic projects, evidence links, drafts and structural audits |
 | [Blender Asset Lab](plugins/blender) | 0.1.0-alpha.1 | Original asset workflows and executable Blender scene auditing |
 | [AV3X Antartica / Android](https://github.com/starkfiber/av3x-antartica) | Separate repository | SDK-native Android development and a versioned evidence atlas |

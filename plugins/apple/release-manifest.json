@@ -1,6 +1,6 @@
 {
   "name": "apple",
-  "version": "2.0.0-alpha.4",
+  "version": "2.0.0-alpha.6",
   "files": [
     {
       "path": ".codex-plugin/mcp.json",
@@ -8,7 +8,7 @@
     },
     {
       "path": ".codex-plugin/plugin.json",
-      "sha256": "5e3d3be2f680686a89471aaa68101c894ff6dd337f55ba5da83e1d3ca22cee9c"
+      "sha256": "5d265fff4223773cbaa85376d1e6e7a2502562d6b5cd2fafabb98ccf99f36f67"
     },
     {
       "path": "LICENSE",
@@ -16,15 +16,23 @@
     },
     {
       "path": "README.md",
-      "sha256": "8c42ab31d6239c4704279a4f8c087a5bd98e308b5a8ecc2b6cd47f3f749c58d2"
+      "sha256": "2f81bab3fa560be5768e2b36a7d42c2b519a3fb79cc0de0dea72e901e26ca4bc"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
       "sha256": "54ade2c548e323d0c1ef890a544c696a946358e87eb3dc9462d75a55548a2288"
     },
     {
+      "path": "docs/CHANGELOG.md",
+      "sha256": "822eb8b65fe61e08e64ba1b75a1c6ac5b3a8140165c9d58b42085c91f5f2942e"
+    },
+    {
+      "path": "docs/RELEASE-CHECKS.md",
+      "sha256": "51f4c850805396e4e9c3d69520aae0f910f2716d739e8d0b673e8216c79cfc4f"
+    },
+    {
       "path": "docs/STATUS.md",
-      "sha256": "520521a8cdc0e20fd5429a77fab45e920578677dd39d0061f32bd2729ef613a6"
+      "sha256": "036b929e67fe720641e12eb608ceef041dce666747c461e502e15023e38715e8"
     },
     {
       "path": "docs/V3-EXIT-CONTRACT.md",
@@ -33,6 +41,10 @@
     {
       "path": "docs/V3-QUALIFICATION.md",
       "sha256": "041a634c5a16c5d66273713d9580806052f8dd9ba6c51248c98360068ff4c371"
+    },
+    {
+      "path": "docs/WORKFLOW.md",
+      "sha256": "4e096f6e42b499d075d4abadaed209217a1d643b4acb9b20aa7d28fa14636edb"
     },
     {
       "path": "examples/BlueprintSample/Info.plist",
@@ -128,7 +140,11 @@
     },
     {
       "path": "skills/apple/SKILL.md",
-      "sha256": "6a73139218680a216b286cd545c67b4fca42b5cd09645d77ee3a5f69c048e309"
+      "sha256": "7cadc36bfa4ff99f76a3e44024bf1c974a3a7c1a48f6d0ce51fcc6c2924ba9c6"
+    },
+    {
+      "path": "skills/apple/references/cross-runtime-handoff.md",
+      "sha256": "aa0f92883bbac554cdc44f7b387a98c22d3471d685bb37d9565dca9b4ba39e14"
     },
     {
       "path": "skills/apple/references/design.md",
@@ -147,16 +163,44 @@
       "sha256": "fdff9e5f5aa3ed6b2e40a432ebf72bbe7b8dd58f85807bdf2c7f81752ee99579"
     },
     {
+      "path": "skills/apple/references/iphone-controller-lessons.md",
+      "sha256": "431f5b185841e76b36731a54547d4a5ffc8f9ca7a6d5028db964cd166abf4c39"
+    },
+    {
+      "path": "skills/apple/references/motion-device-evidence.md",
+      "sha256": "7f6eb9fe59065f0fe6e50211f392a22d323d433b63a8f45186517b5b96e4454a"
+    },
+    {
       "path": "skills/apple/references/objective-interface.md",
       "sha256": "e461e702691df87d5767e44b381db5cf3b337562c7f96e4b25830b3649f2a012"
+    },
+    {
+      "path": "skills/apple/references/payment-returns.md",
+      "sha256": "1c2bbcc37b1a532211003a76b5c534603e50beebff08f912886ca1d1d88568e3"
+    },
+    {
+      "path": "skills/apple/references/performance-qualification.md",
+      "sha256": "15105d6b6815c0727030786bdb2ec485542e39af7adc8cf5c97780c905151fb9"
+    },
+    {
+      "path": "skills/apple/references/physical-iphone.md",
+      "sha256": "543768ef2c3e68746be28771f65845b9d25e8d9aca2a774e0aca11f490f31690"
     },
     {
       "path": "skills/apple/references/platforms.md",
       "sha256": "9f5f935329d13297ed3d7eea1fca975920b5c327cb148e7053382d08b2ef9e93"
     },
     {
+      "path": "skills/apple/references/rendering-performance.md",
+      "sha256": "67beb2bb632e15a0f342647405213135a0a6369ea8231adb3d6abf4f15629b69"
+    },
+    {
       "path": "skills/apple/references/review-engine.md",
       "sha256": "df093ddfea428698346ae8b0315f3a2810030d66e9595e38d5a3a6f9a9d28f28"
+    },
+    {
+      "path": "skills/apple/references/smooth-motion-audit.md",
+      "sha256": "a47af1a5b3d053e39c794b29257af4372a4b9338fedd1c0ce529d133d63aac98"
     },
     {
       "path": "skills/apple/references/sources.md",
@@ -380,7 +424,7 @@
     },
     {
       "path": "skills/apple/registry.json",
-      "sha256": "087a6136b1781d7943bbfd9cbc2a149c92690490daabf9ceb9a288a0e22c3745"
+      "sha256": "7f9c23b8431a866bd5bb8ebef5f0e3b214ba6be0091eecda700ad2fdf688ea2d"
     },
     {
       "path": "skills/apple/scripts/apple.mjs",
@@ -408,7 +452,7 @@
     },
     {
       "path": "tests/fixtures/routing.json",
-      "sha256": "af1bc6548a2a3ce6d9f915240a4f11bf45aa59b87bdb0e0cb4cc8bfcd9e4eb6c"
+      "sha256": "a60e531fb485ad3dbd38d9cf3e01b772cc40f3d996b02f48f3f7ec20d39e9ce0"
     },
     {
       "path": "tests/launcher.test.mjs",

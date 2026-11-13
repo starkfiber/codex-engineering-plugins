@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "2.0.0-alpha.4",
+  "version": "2.0.0-alpha.6",
   "platforms": [
     "macOS",
     "iOS",
@@ -146,6 +146,123 @@
         "update skill"
       ],
       "frameworks": []
+    },
+    {
+      "id": "physical-iphone",
+      "reference": "physical-iphone.md",
+      "terms": [
+        "iphone",
+        "webdriveragent",
+        "wda",
+        "physical device",
+        "thermal"
+      ],
+      "frameworks": []
+    },
+    {
+      "id": "payment-returns",
+      "reference": "payment-returns.md",
+      "terms": [
+        "fpx",
+        "payment",
+        "checkout",
+        "callback",
+        "gateway"
+      ],
+      "frameworks": []
+    },
+    {
+      "id": "motion-device-evidence",
+      "reference": "motion-device-evidence.md",
+      "terms": [
+        "animation",
+        "screenshot",
+        "fps",
+        "thermal",
+        "keyboard"
+      ],
+      "frameworks": []
+    },
+    {
+      "id": "cross-runtime-handoff",
+      "reference": "cross-runtime-handoff.md",
+      "terms": [
+        "rf2",
+        "rf\u00b2",
+        "ruos",
+        "reverse lab"
+      ],
+      "frameworks": []
+    },
+    {
+      "id": "iphone-controller-lessons",
+      "reference": "iphone-controller-lessons.md",
+      "terms": [
+        "my iphone",
+        "scrcpy",
+        "task switcher",
+        "app switcher",
+        "remote preview",
+        "physical iphone performance"
+      ],
+      "frameworks": [
+        "AppKit",
+        "XCTest"
+      ]
+    },
+    {
+      "id": "rendering-performance",
+      "reference": "rendering-performance.md",
+      "terms": [
+        "fps",
+        "gpu",
+        "frame pacing",
+        "core animation",
+        "native performance",
+        "promotion",
+        "thermal",
+        "usb video"
+      ],
+      "frameworks": [
+        "QuartzCore",
+        "Metal",
+        "AVFoundation",
+        "CoreMediaIO"
+      ]
+    },
+    {
+      "id": "performance-qualification",
+      "reference": "performance-qualification.md",
+      "terms": [
+        "sustained performance",
+        "backpressure",
+        "thermal protocol",
+        "release phone",
+        "device release",
+        "latest frame",
+        "cooldown"
+      ],
+      "frameworks": [
+        "AVFoundation",
+        "Foundation",
+        "SwiftUI"
+      ]
+    },
+    {
+      "id": "smooth-motion-audit",
+      "reference": "smooth-motion-audit.md",
+      "terms": [
+        "smooth motion",
+        "gpu acceleration",
+        "latest frame mailbox",
+        "subtle effects",
+        "motion audit"
+      ],
+      "frameworks": [
+        "CoreImage",
+        "QuartzCore",
+        "AppKit"
+      ]
     }
   ],
   "specialists": [

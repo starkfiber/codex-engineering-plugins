@@ -1,6 +1,6 @@
 # Public qualification and gaps
 
-Reverse Lab3.3.2 and Apple Blueprint2.0.0-alpha.4 are first public source packages from previously local plugins. Versioned source, manifests and community CI are new public proof; prior private case outcomes remain historical.
+Reverse Lab3.3.2 and Apple Blueprint2.0.0-alpha.6 are first public source packages from previously local plugins. Versioned source, manifests and community CI are new public proof; prior private case outcomes remain historical.
 
 Reverse Lab community checks cover case creation/verification, malformed and stale records, supported coverage schemas, dependency invalidation, job reservation/failure/owned-child cleanup and hash-reviewed replay. Coverage fixtures are explicitly synthetic; no private Etcher artifact or full original-application analysis is shipped. Runtime gates cannot pass from static records. POSIX cleanup is the qualified execution family; Windows is not.
 

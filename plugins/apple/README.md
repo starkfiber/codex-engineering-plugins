@@ -1,32 +1,85 @@
-# Apple Blueprint · 2.0.0-alpha.4
+# Apple Blueprint
 
-A Swift/native Apple development workflow with focused references and three local read-only MCP tools. Invoke `$apple` after installation and refresh the chat. It routes macOS, iOS, iPadOS, watchOS, tvOS, visionOS, extensions and firmware questions to relevant guidance; it is not Apple OS source or an exhaustive offline SDK.
+**Design with intent. Build natively. Verify with evidence.**
 
-- `apple_route`: reference routing with reasons.
-- `apple_inspect_project`: bounded configuration/source heuristics for a selected local project.
-- `apple_sha256`: streamed selected-file digest, optionally compared with an expected digest.
-- `apple://registry`: routing/provenance resource.
-- `apple_native_review`: native review prompt.
+Apple Blueprint helps Codex work on Swift apps across macOS, iOS, iPadOS, watchOS, tvOS and visionOS. It connects platform guidance, focused design reviews and local inspection tools into one engineering workflow.
 
-These tools do not build, restore firmware, deploy to hardware or establish App Review acceptance. An existing Node22+ runs the local server; Xcode/SDKs and actual devices are separate. No API key is required by these helpers.
+**Release: 2.0.0-alpha.6 · public alpha · Node.js 22+**
+Independent project; not affiliated with or endorsed by Apple.
+
+```mermaid
+flowchart LR
+  A[Understand the task] --> B[Inspect the project]
+  B --> C[Design and implement]
+  C --> D[Build and test]
+  D --> E[Observe real behavior]
+  E --> F[Release with evidence]
+  E --> C
+```
+
+## What you can do
+
+| Your task | Blueprint helps with |
+| --- | --- |
+| Build an Apple app | Swift architecture, concurrency, persistence and platform-specific interactions |
+| Improve an interface | Hierarchy, typography, accessibility, motion and native controls |
+| Investigate stutter | Separate app rendering, GPU work, capture transport and input latency |
+| Work with a real iPhone | Device identity, trusted automation, bounded capture, idle pause and evidence |
+| Review payment returns | Browser-to-app handoff, authoritative payment state and duplicate-credit checks |
+| Prepare a release | Source-bound build evidence, explicit acceptance gates and rollback planning |
+
+## Start here
+
+Install this repository's Apple plugin using your Codex plugin installation interface, selecting `plugins/apple`. The plugin requires a local executor; installation capabilities depend on your Codex host. Do not assume that copying files registers a plugin or connects MCP.
+
+After installation, ask:
+
+> Use Apple Blueprint to inspect this project, improve its native navigation and verify the changed behavior. Keep device tests separate from local tests.
+
+To inspect the helpers directly, run from this plugin directory:
 
 ```sh
-node skills/apple/scripts/apple.mjs route 'Build a watchOS workout app'
 node skills/apple/scripts/apple.mjs doctor
+node skills/apple/scripts/apple.mjs route "Investigate animation hitches in my iOS app"
 node scripts/mcp-server.mjs --stdio
 ```
 
-The marketplace registers the portable launch script. Standalone clients may configure command `node` with `/absolute/repository/plugins/apple/scripts/mcp-server.mjs --stdio`; avoid duplicate registrations. Review discovered schemas for exact arguments. Start with a route, inspect the actual project and record compiler, UI and hardware outcomes separately.
+No API key or npm dependency installation is required for the core helpers. Xcode and the relevant SDKs are required for Apple builds; hardware, signing and account access are separate prerequisites.
 
-Selected upstream MIT specialist references remain intact, with exact revisions and full licenses in skills/apple/registry.json and THIRD_PARTY_NOTICES.md. Other linked tools are references, not bundled installers. The included macOS Swift sample uses synthetic fixtures and a generic example-client contract; it does not connect to a real phone or private operating-system service.
+## Local tools
 
-Run the real sample tests from the repository root:
+- **apple_route** selects focused references and explains routing.
+- **apple_inspect_project** reports project configuration and heuristic findings for review.
+- **apple_sha256** computes file integrity hashes; it does not prove signing or safety.
+- **apple://registry** exposes routing/provenance; **apple_native_review** supplies a review prompt.
+
+The helpers do not automatically deploy apps, restore devices, sign releases or approve financial transactions. Project source stays local unless you separately authorize a transfer.
+
+## Guides
+
+- [Workflow and practical prompts](docs/WORKFLOW.md)
+- [Release status and remaining qualification](docs/STATUS.md)
+- [Changes in this release](docs/CHANGELOG.md)
+- [Performance and smooth-motion audit](skills/apple/references/smooth-motion-audit.md)
+- [Physical iPhone workflow](skills/apple/references/physical-iphone.md)
+- [Full verification contract](docs/V3-EXIT-CONTRACT.md)
+- [Licenses and upstream attribution](THIRD_PARTY_NOTICES.md)
+
+## Verify this package
+
+From the repository root:
 
 ```sh
+node scripts/check.mjs
 node plugins/apple/scripts/test-swift.mjs
-swift run --package-path plugins/apple/examples/BlueprintSample BehaviorCheck
 ```
 
-On a Mac using Command Line Tools, the helper supplies the selected toolchain's built-in Swift Testing framework and runtime search paths. It installs nothing and changes no global developer selection. Full Xcode uses its normal Swift Testing integration. See the upstream [Swift Testing distributions guide](https://github.com/swiftlang/swift-testing/blob/main/Documentation/Distributions.md).
+The Node suite covers helper behavior, routing, relocation and evidence gates. The Swift sample is synthetic. Neither establishes physical-device smoothness, App Review acceptance or financial correctness.
 
-This is a **public alpha**. Current helper/compiler checks and bounded macOS UI results do not certify every platform. Firmware preflight deliberately does not establish restore/signing eligibility. The [full V3 contract](docs/V3-EXIT-CONTRACT.md) is retained; [qualification](docs/V3-QUALIFICATION.md) identifies the open gates. See docs/STATUS.md and the repository's shared contribution/security guidance.
+## What changed in alpha.6
+
+Real-device lessons now inform capture backpressure, serialized input, app activation checks and safe idle behavior. Motion guidance distinguishes native frame pacing from remote-preview speed. Latest-frame mailbox guidance explains how to discard stale video without discarding ordered input.
+
+**The My iPhone controller is a separate application, not bundled here.** Its local queue tests inform these references; the revised controller still needs device qualification. This release does not promise flawless performance or universal platform coverage.
+
+MIT for original material; selected upstream specialists retain their licenses and revision pins.
